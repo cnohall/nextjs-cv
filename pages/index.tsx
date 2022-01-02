@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import { Container } from 'react-bootstrap'
+import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>Chris Nohall`s Portfolio</title>
         {/* Change this for create better SEO */}
@@ -46,7 +48,7 @@ export default function Home() {
 
           <Link href="/gongdo-tech"  passHref>
             <a className={styles.card}>
-              <h2>Gongdo tech &rarr;</h2>
+              <h2>Gongdo Tech &rarr;</h2>
               <p>
                 Instantly deploy your Next.js site to a public URL with Vercel.
               </p>
@@ -54,6 +56,6 @@ export default function Home() {
           </Link>
         </div>
       </main>
-    </div>
+    </Container>
   )
 }
