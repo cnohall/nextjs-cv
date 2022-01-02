@@ -22,7 +22,7 @@ export default function Home() {
         <div>
           <Col>
 
-          <Row className="my-4">
+          <Row >
           <Link href="/projects" passHref>
             <Card
               role='button'
