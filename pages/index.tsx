@@ -41,7 +41,7 @@ export default function Home() {
             </Card>
           </Link>
 
-          <Link href="/contact" passHref>
+          <Link href="/gongdo-tech"  passHref>
           <Card
               role='button'
               bg='light'
@@ -50,7 +50,7 @@ export default function Home() {
               className="m-3"
             >
               <Card.Body>
-                <Card.Title>Contact</Card.Title>
+                <Card.Title>Gongdo Tech</Card.Title>
                 <Card.Text>
                 {`Some quick example text to build on the card title and make up the bulk
                   of the card's content.`} &rarr;
@@ -78,7 +78,7 @@ export default function Home() {
             </Card>
           </Link>
 
-          <Link href="/gongdo-tech"  passHref>
+          <Link href="/contact" passHref>
           <Card
               role='button'
               bg='light'
@@ -87,7 +87,7 @@ export default function Home() {
               className="m-3"
             >
               <Card.Body>
-                <Card.Title>Gongdo Tech</Card.Title>
+                <Card.Title>Contact</Card.Title>
                 <Card.Text>
                 {`Some quick example text to build on the card title and make up the bulk
                   of the card's content.`} &rarr;
