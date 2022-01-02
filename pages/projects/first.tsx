@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-export default function Contact() {
+export default function Third() {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +14,7 @@ export default function Contact() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Contact Me
+          First Project
         </h1>
       </main>
     </div>

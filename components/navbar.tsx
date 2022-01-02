@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 
 export default function Navigationbar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" variant='light' expand="lg">
         <Container>
             <Link href="/"passHref><Navbar.Brand>{`Chris Nohall's Portfolio`}</Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -12,11 +12,11 @@ export default function Navigationbar() {
             <Nav className="me-auto">       
                 <Link href="/"passHref><Nav.Link>Home</Nav.Link></Link>
                 <NavDropdown title="Projects" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Project 1</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Project 2</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Project 3</NavDropdown.Item>
+                    <Link href="/projects/first"passHref><NavDropdown.Item>Project 1</NavDropdown.Item></Link>
+                    <Link href="/projects/second"passHref><NavDropdown.Item>Project 2</NavDropdown.Item></Link>
+                    <Link href="/projects/third"passHref><NavDropdown.Item>Project 3</NavDropdown.Item></Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Summary</NavDropdown.Item>
+                    <Link href="/projects/summary"passHref><NavDropdown.Item>Summary</NavDropdown.Item></Link>
                 </NavDropdown>
                 <Link href="/gongdo-tech"passHref><Nav.Link>Gongdo Tech</Nav.Link></Link>
                 <Link href="/about"passHref><Nav.Link>About</Nav.Link></Link>
