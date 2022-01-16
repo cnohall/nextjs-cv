@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 
 export default function Navigationbar() {
   return (
-    <Navbar bg="secondary" variant='dark'>
+    <Navbar variant='dark'>
         <Container >
             <Link href="/"passHref><Navbar.Brand>{'Chris Nohall'}</Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
