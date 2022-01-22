@@ -21,22 +21,27 @@ export default function Contact() {
         </Col>
         <Col>
         <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              {`We'll never share your email with anyone else.`}
-            </Form.Text>
+          <Row xs={1} sm={2}>
+            <Col>
+              <Form.Group className="my-2">
+                <Form.Label>Your Name</Form.Label>
+                <Form.Control type="text" placeholder="Enter your name" />
+              </Form.Group>
+            </Col>
+            <Col>
+              <Form.Group className="my-2">
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control type="email" placeholder="Enter your email address" />
+              </Form.Group>
+            </Col>
+          </Row>
+
+          <Form.Group className="mb-3">
+            <Form.Label>Your Message</Form.Label>
+            <Form.Control as="textarea" rows={3} placeholder="Hi, we need a frontend developer to on our website at Company X. How soon can we hop on a call to discuss this?" />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="secondary" type="submit">
             Submit
           </Button>
         </Form>
