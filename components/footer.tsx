@@ -1,16 +1,20 @@
 import Link from 'next/link'
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Container, Nav } from 'react-bootstrap'
+import { BsGithub, BsLinkedin, BsStackOverflow } from 'react-icons/bs';
+
 
 export default function Footer() {
   return (
     <Navbar variant='dark'>
         <Container>
-            <Nav className="m-auto">       
-                <Link href="/"passHref><Nav.Link>Home</Nav.Link></Link>
-                <Link href="/work"passHref><Nav.Link>Work</Nav.Link></Link>
-                <Link href="/resume"passHref><Nav.Link>Resume</Nav.Link></Link>
-                <Link href="/contact"passHref><Nav.Link>Contact</Nav.Link></Link>
-            </Nav>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">    
+          <Nav> 
+            <Link href="https://github.com/cnohall/cnohall"passHref><Nav.Link><BsGithub/></Nav.Link></Link>
+            <Link href="https://www.linkedin.com/in/christopher-nohall/"passHref><Nav.Link><BsLinkedin/></Nav.Link></Link>
+            <Link href="https://stackoverflow.com/users/12072571/cnohall"passHref><Nav.Link><BsStackOverflow/></Nav.Link></Link>
+          </Nav>
+        </Navbar.Collapse>
         </Container>
     </Navbar>
   )
