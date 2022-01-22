@@ -27,10 +27,9 @@ export default function Home() {
           <Image
             className='rounded '
             src={myImage}
-            alt="Picture of the author"
+            alt="Drawing of Chris Nohall"
             width={213}
             height={403}
-            
           />
         </Col>
       </Row>
