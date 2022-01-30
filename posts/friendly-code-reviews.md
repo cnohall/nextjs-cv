@@ -1,19 +1,18 @@
 ---
 title: "The Importance of Friendly Code Reviews"
-date: "2022-01-23"
+date: "2022-01-30"
+description: "All of us stand to benefit from being nice when reviewing each other's code."
+readtime: 1 min
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+Code Reviews, it's something that we all encounter in our day to day work. Reviews are useful and necessary, both for the developer and the code. It also helps the reviewers to feel ownership for code that they didn't write themselves. 
 
-You can use Static Generation for many types of pages, including:
+The importance of code reviews is hard to overstate. However, there is one aspect of reviews that is easy to overlook - being friendly. Since reviews often happen between peers and within a team, the friendly attitude and tone when writing comments helps keep an open discussion and a good atmosphere.
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+How can we make sure that our reviews are friendly? Here are some compenents:
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+- Using the words thanks and please. 
+- Bring up suggestions as questions. Instead of writing "change `let` for `const`", write "How about changing `let` for `const`?"
+- Smileys and icons - when used in moderation - can also lead to a more friendly tone. 
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+In summary, as developers we all encounter code reviews, so let us use them as a opportunity to improve each others skills, the quality of the code, as well as the atmosphere in the team. 

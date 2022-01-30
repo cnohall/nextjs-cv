@@ -6,18 +6,17 @@ import Dalarnas_icon from '../public/dalarnas_icon.png';
 import Gongdo_icon from '../public/gongdo_icon.jpg';
 import styles from '../styles/Home.module.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import { MdWork, MdSchool } from 'react-icons/md';
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
 
 const GoodPairDaysIcon = () => {
   return (
     <Image
-    className='rounded-circle'
-    src={Gpd_icon}
-    alt="Good Pair Days"
-    width={128}
-    height={128}
+      className='rounded-circle'
+      src={Gpd_icon}
+      alt="Good Pair Days"
+      width={128}
+      height={128}
     />
   )
 }
@@ -25,11 +24,11 @@ const GoodPairDaysIcon = () => {
 const BlockonomicsIcon = () => {
   return (
     <Image
-    className='rounded-circle'
-    src={Blockonomics_icon}
-    alt="Blockonomics"
-    width={128}
-    height={128}
+      className='rounded-circle'
+      src={Blockonomics_icon}
+      alt="Blockonomics"
+      width={128}
+      height={128}
     />
   )
 }
@@ -37,11 +36,11 @@ const BlockonomicsIcon = () => {
 const DalarnasIcon = () => {
   return (
     <Image
-    className='rounded-circle'
-    src={Dalarnas_icon}
-    alt="Dalarnas University"
-    width={128}
-    height={128}
+      className='rounded-circle'
+      src={Dalarnas_icon}
+      alt="Dalarnas University"
+      width={128}
+      height={128}
     />
   )
 }
@@ -49,11 +48,11 @@ const DalarnasIcon = () => {
 const GongdoIcon = () => {
   return (
     <Image
-    className='rounded-circle'
-    src={Gongdo_icon}
-    alt="Gongdo Tech"
-    width={128}
-    height={128}
+      className='rounded-circle'
+      src={Gongdo_icon}
+      alt="Gongdo Tech"
+      width={128}
+      height={128}
     />
   )
 }

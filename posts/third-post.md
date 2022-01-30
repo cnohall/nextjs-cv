@@ -1,7 +1,7 @@
 ---
-title: "An image speaks more than 1000 lines of code"
+title: "Google meets 5 min"
 date: "2022-02-07"
-description: "Videos and images in Pull Requests makes it easier for everybody involved"
+description: "Working remote"
 readtime: 1 min
 ---
 
