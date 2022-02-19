@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
@@ -10,15 +10,21 @@ const messagePlaceholder = 'Hi, we need a frontend developer to on our website a
 
 export default function Contact() {
   const form = useRef();
+  const [sentEmail, setSentEmail] = useState<boolean>(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if(sentEmail) {
+      alert('You have already sent an email');
+      return;
+    } 
     const userId = process.env.NEXT_PUBLIC_USER_ID;
     const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
     emailjs.sendForm(serviceId, templateId, form.current, userId)
       .then((result) => {
           console.log(result.text);
+          setSentEmail(true);
       }, (error) => {
           console.log(error.text);
       });
