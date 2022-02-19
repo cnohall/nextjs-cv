@@ -10,8 +10,10 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const {NEXT_PUBLIC_USER_ID, NEXT_PUBLIC_SERVICE_ID, NEXT_PUBLIC_TEMPLATE_ID} = process.env;
-    emailjs.sendForm(NEXT_PUBLIC_SERVICE_ID, NEXT_PUBLIC_TEMPLATE_ID, form.current, NEXT_PUBLIC_USER_ID)
+    const userId = process.env.NEXT_PUBLIC_USER_ID;
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    emailjs.sendForm(serviceId, templateId, form.current, userId)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
