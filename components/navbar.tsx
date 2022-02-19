@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
+import Image from 'next/image';
+import Link from 'next/link';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 export default function Navigationbar() {
   return (
@@ -19,5 +19,5 @@ export default function Navigationbar() {
             </Navbar.Collapse>
         </Container>
     </Navbar>
-  )
+  );
 }

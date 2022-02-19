@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
 import myImage from '../public/cartoon_me.png';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <Container className={styles.center}>
       <Head>
-        <title>{`Chris Nohall's Portfolio`}</title>
+        <title>{'Chris Nohall\'s Portfolio'}</title>
         {/* Change this for create better SEO */}
         <meta name="description" content="Chris Nohall's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
@@ -34,7 +34,7 @@ export default function Home() {
         </Col>
       </Row>
     </Container>
-  )
+  );
 }
 
 

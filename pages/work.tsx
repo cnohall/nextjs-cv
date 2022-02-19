@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 import Gpd_icon from '../public/GPD_icon.png';
 import Blockonomics_icon from '../public/blockonomics_icon.png';
 import Dalarnas_icon from '../public/dalarnas_icon.png';
 import Gongdo_icon from '../public/gongdo_icon.jpg';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
@@ -18,8 +18,8 @@ const GoodPairDaysIcon = () => {
       width={128}
       height={128}
     />
-  )
-}
+  );
+};
 
 const BlockonomicsIcon = () => {
   return (
@@ -30,8 +30,8 @@ const BlockonomicsIcon = () => {
       width={128}
       height={128}
     />
-  )
-}
+  );
+};
 
 const DalarnasIcon = () => {
   return (
@@ -42,8 +42,8 @@ const DalarnasIcon = () => {
       width={128}
       height={128}
     />
-  )
-}
+  );
+};
 
 const GongdoIcon = () => {
   return (
@@ -54,14 +54,14 @@ const GongdoIcon = () => {
       width={128}
       height={128}
     />
-  )
-}
+  );
+};
 
 export default function Work() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{`Chris Nohall's Work Experience`}</title>
+        <title>{'Chris Nohall\'s Work Experience'}</title>
         {/* Change this for create better SEO */}
         <meta name="description" content="Chris Nohall's Work Experience" />
         <link rel="icon" href="/favicon.ico" />
@@ -130,10 +130,10 @@ export default function Work() {
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
           icon={<DalarnasIcon />}
         >
-          <h3 className="vertical-timeline-element-title">{`Bachelor's Degree - Chinese Linguistics`}</h3>
+          <h3 className="vertical-timeline-element-title">{'Bachelor\'s Degree - Chinese Linguistics'}</h3>
           <h4 className="vertical-timeline-element-subtitle">Dalarnas University</h4>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
-  )
+  );
 }

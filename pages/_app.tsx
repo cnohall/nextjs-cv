@@ -1,6 +1,6 @@
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/main.css'
+import '../styles/main.css';
 
 function MyApp({ Component, pageProps }) {
 
@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
