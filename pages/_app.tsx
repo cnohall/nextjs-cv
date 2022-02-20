@@ -2,6 +2,7 @@ import Layout from '../components/layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.css';
 import { useEffect } from 'react';
+import '../helpers/i18n';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

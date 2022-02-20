@@ -2,10 +2,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import { Container, Row, Col } from 'react-bootstrap';
+import { useTranslation } from 'next-i18next';
+import { I18N_NAMESPACES } from '../helpers/constants';
+
 import myImage from '../public/cartoon_me.png';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const { t } = useTranslation([I18N_NAMESPACES.INDEX]);
   return (
     <Container className={styles.center}>
       <Head>
@@ -17,10 +21,10 @@ export default function Home() {
       <Row xs={1} sm={2} className='d-flex align-items-center'>
         <Col >
           <h1>
-            Frontend Developer
+            {t('index:frontendDeveloper')}
           </h1>
           <h3>
-            I’m a frontend developer based in South Korea.
+            {t('index:basedInKorea')}
           </h3>
         </Col>
         <Col className='d-flex justify-content-center mt-5'>
