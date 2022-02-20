@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
 export default function Navigationbar() {
   return (
