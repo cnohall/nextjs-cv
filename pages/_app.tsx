@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-       navigator.serviceWorker.register('/sw.js').then(
+       navigator.serviceWorker.register('/sw.tsx').then(
           function (registration) {
             console.log('Service Worker registration successful with scope: ', registration.scope);
           },
