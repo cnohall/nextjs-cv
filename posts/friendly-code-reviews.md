@@ -2,7 +2,7 @@
 title: "The Importance of Friendly Code Reviews"
 date: "2022-01-30"
 description: "All of us stand to benefit from being nice when reviewing each other's code."
-readtime: 1 min
+readtime: 0 min 55 sec
 ---
 
 Code Reviews, it's something that we all encounter in our day to day work. Reviews are useful and necessary, both for the developer and the code. It also helps the reviewers to feel ownership for code that they didn't write themselves. 
