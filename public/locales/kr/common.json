@@ -1,4 +1,12 @@
 {
-    "frontendDeveloper": "프론트엔드 개발자",
-    "basedInKorea": "저는 한국에 거주하는 프론트엔드 개발자입니다."
+    "home": "홈페이지",
+    "work": "직장 경험",
+    "writing": "블로그",
+    "projects": "프로젝트",
+    "contact": "연락",
+    "languages": "언어",
+    "english": "영어",
+    "swedish": "스웨덴어",
+    "korean": "한국어",
+    "chinese": "중국어"
 }

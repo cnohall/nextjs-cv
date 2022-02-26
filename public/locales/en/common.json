@@ -1,4 +1,12 @@
 {
-    "frontendDeveloper": "Frontend Developer",
-    "basedInKorea": "I’m a frontend developer based in South Korea."
+    "home": "Home",
+    "work": "Work",
+    "writing": "Writing",
+    "projects": "Projects",
+    "contact": "Contact",
+    "languages": "Languages",
+    "english": "English",
+    "swedish": "Swedish",
+    "korean": "Korean",
+    "chinese": "Chinese (Mandarin)"
 }

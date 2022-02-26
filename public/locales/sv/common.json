@@ -1,4 +1,12 @@
 {
-    "frontendDeveloper": "Frontend-utvecklare",
-    "basedInKorea": "Hej! Jag är en frontend-utvecklare som bor i Sydkorea."
+    "home": "Hem",
+    "work": "Arbetserfarenhet",
+    "writing": "Blog",
+    "projects": "Projekt",
+    "contact": "Kontakt",
+    "languages": "Språk",
+    "english": "Engelska",
+    "swedish": "Svenska",
+    "korean": "Koreanska",
+    "chinese": "Kinesiska"
 }
