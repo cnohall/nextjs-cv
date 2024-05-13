@@ -73,7 +73,7 @@ export default function Work() {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(177,172,185)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(177,172,185)' }}
-          date="Aug 2021 - present"
+          date="Aug 2021 - Present"
           icon={<GoodPairDaysIcon/>}
         >
           <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
