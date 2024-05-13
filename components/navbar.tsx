@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 export default function Navigationbar() {
 
   const [language, setLanguage] = useState();
-  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
 
   useEffect(() => {
     i18next.changeLanguage(language);

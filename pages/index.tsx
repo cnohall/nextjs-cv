@@ -9,7 +9,7 @@ import myImage from '../public/cartoon_me.png';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const { t } = useTranslation([I18N_NAMESPACES.INDEX]);
+  const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
   return (
     <Container className={styles.center}>
       <Head>
@@ -21,10 +21,10 @@ export default function Home() {
       <Row xs={1} sm={2} className='d-flex align-items-center'>
         <Col >
           <h1>
-            {t('index:frontendDeveloper')}
+            {t('common:frontendDeveloper')}
           </h1>
           <h3>
-            {t('index:basedInKorea')}
+            {t('common:basedInKorea')}
           </h3>
         </Col>
         <Col className='d-flex justify-content-center mt-5'>
