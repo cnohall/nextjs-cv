@@ -9,6 +9,7 @@
     "swedish": "스웨덴어",
     "korean": "한국어",
     "chinese": "중국어",
-    "frontendDeveloper": "Chris Nohall",
+    "name": "Chris Nohall",
+    "frontendDeveloper": "안녕하세요, 저는 프론트엔드 개발자 $t(common:name)입니다.",
     "basedInKorea": "저는 한국에 거주하는 프론트엔드 개발자입니다."
 }

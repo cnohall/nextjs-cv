@@ -9,6 +9,7 @@
     "swedish": "Svenska",
     "korean": "Koreanska",
     "chinese": "Kinesiska",
-    "frontendDeveloper": "Chris Nohall",
+    "name": "Christopher Nohall",
+    "frontendDeveloper": "Hej, jag är $t(common:name)",
     "basedInKorea": "Hej! Jag är en frontend-utvecklare som bor i Sydkorea."
 }

@@ -9,6 +9,7 @@
     "swedish": "瑞典语",
     "korean": "韩语",
     "chinese": "中文",
-    "frontendDeveloper": "鲁海",
-    "basedInKorea": "你好！我是一个住在韩国的前端工程师。"
+    "name": "鲁海",
+    "frontendDeveloper": " 你好， 我是$t(common:name)",
+    "basedInKorea": "我是一个住在韩国的前端工程师。"
 }
