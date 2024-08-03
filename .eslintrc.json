@@ -1,12 +1,9 @@
 {
   "root": true,
-  "extends": [
-      "next/core-web-vitals"
-  ],
+  "extends": ["next/core-web-vitals"],
   "rules": {
     "semi": ["error", "always"],
-    "quotes": ["error", "single"],
-    "max-len": ["error", { "code": 110, "tabWidth": 4 }]
+    "max-len": ["error", { "code": 110, "tabWidth": 2 }]
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": { "project": ["./tsconfig.json"] }

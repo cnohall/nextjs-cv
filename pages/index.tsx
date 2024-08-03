@@ -13,23 +13,19 @@ export default function Home() {
   return (
     <Container className={styles.center}>
       <Head>
-        <title>{'Chris Nohall\'s Portfolio'}</title>
+        <title>{"Chris Nohall's Portfolio"}</title>
         {/* Change this for create better SEO */}
         <meta name="description" content="Chris Nohall's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Row xs={1} sm={2} className='d-flex align-items-center'>
-        <Col >
-          <h1>
-            {t('common:frontendDeveloper')}
-          </h1>
-          <h3>
-            {t('common:basedInKorea')}
-          </h3>
+      <Row xs={1} sm={2} className="d-flex align-items-center">
+        <Col>
+          <h1>{t('common:frontendDeveloper')}</h1>
+          <h3>{t('common:basedInKorea')}</h3>
         </Col>
-        <Col className='d-flex justify-content-center mt-5'>
+        <Col className="d-flex justify-content-center mt-5">
           <Image
-            className='rounded '
+            className="rounded "
             src={myImage}
             alt="Drawing of Chris Nohall"
             width={213}
@@ -40,5 +36,3 @@ export default function Home() {
     </Container>
   );
 }
-
-

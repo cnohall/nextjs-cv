@@ -2,9 +2,9 @@ import React, { useRef, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 import emailjs from '@emailjs/browser';
-import BootstrapToast from '../components/toast';
+import BootstrapToast from '../components/molecules/toast';
 
 const messagePlaceholder =
   'Hi, we need a frontend developer to on our website at Company X. ' +
