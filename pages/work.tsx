@@ -4,7 +4,7 @@ import Gpd_icon from '../public/GPD_icon.png';
 import Blockonomics_icon from '../public/blockonomics_icon.png';
 import Dalarnas_icon from '../public/dalarnas_icon.png';
 import Gongdo_icon from '../public/gongdo_icon.jpg';
-import styles from '../../styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
