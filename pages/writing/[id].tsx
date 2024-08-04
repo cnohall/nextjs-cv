@@ -1,6 +1,6 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
-import Date from '../../components/date';
+import Date from '../../components/atoms/date';
 import utilStyles from '../../styles/utils.module.css';
 import { Container } from 'react-bootstrap';
 
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
   const paths = getAllPostIds();
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 }
 
@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
   return {
     props: {
-      postData
-    }
+      postData,
+    },
   };
 }

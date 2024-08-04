@@ -1,4 +1,4 @@
-import Layout from '../components/molecules/Layout';
+import Layout from '../components/molecules/layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.css';
 import { useEffect } from 'react';
