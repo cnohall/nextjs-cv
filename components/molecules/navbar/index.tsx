@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { I18N_NAMESPACES, LANGUAGES } from '../../../helpers/constants';
 import { useEffect, useState } from 'react';
 import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 export default function Navigationbar() {
   const [language, setLanguage] = useState('en'); // Initialize with a default value
