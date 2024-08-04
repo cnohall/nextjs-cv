@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Gpd_icon from '../public/GPD_icon.png';
-import Blockonomics_icon from '../public/blockonomics_icon.png';
-import Dalarnas_icon from '../public/dalarnas_icon.png';
-import Gongdo_icon from '../public/gongdo_icon.jpg';
+import Gpd_icon from '../assets/images/GPD_icon.png';
+import Blockonomics_icon from '../assets/images/blockonomics_icon.png';
+import Dalarnas_icon from '../assets/images/dalarnas_icon.png';
+import Gongdo_icon from '../assets/images/gongdo_icon.jpg';
 import styles from '../styles/Home.module.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaTooth } from 'react-icons/fa';

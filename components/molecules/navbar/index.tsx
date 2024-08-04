@@ -2,28 +2,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { I18N_NAMESPACES, LANGUAGES } from '../../../helpers/constants';
-
 import { useEffect, useState } from 'react';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 export default function Navigationbar() {
-  const [language, setLanguage] = useState();
+  const [language, setLanguage] = useState('en'); // Initialize with a default value
   const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
 
   useEffect(() => {
-    i18next.changeLanguage(language);
+    if (language) {
+      i18next.changeLanguage(language);
+    }
   }, [language]);
 
   const changeLanguage = (lng) => {
     setLanguage(lng);
-    return;
   };
 
   return (
     <Navbar variant="dark">
       <Container>
-        {/* <Link href="/"passHref><Navbar.Brand>{'Chris Nohall'}</Navbar.Brand></Link> */}
+        {/* <Link href="/" passHref><Navbar.Brand>{'Chris Nohall'}</Navbar.Brand></Link> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">

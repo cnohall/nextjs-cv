@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'next-i18next';
 import { I18N_NAMESPACES } from '../helpers/constants';
 
-import myImage from '../public/cartoon_me.png';
+import myImage from '../assets/images/cartoon_me.png';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {

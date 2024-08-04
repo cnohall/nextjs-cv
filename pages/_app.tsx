@@ -1,8 +1,11 @@
 import Layout from '../components/molecules/layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/fonts/poppins/stylesheet.css';
 import '../styles/main.css';
 import { useEffect } from 'react';
 import '../helpers/i18n';
+import BaseStyle from '../styles/baseStyles';
+import { SSRProvider } from 'react-bootstrap';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -19,10 +22,14 @@ function MyApp({ Component, pageProps }) {
       });
     }
   }, []);
+
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <SSRProvider>
+      <Layout>
+        <BaseStyle />
+        <Component {...pageProps} />
+      </Layout>
+    </SSRProvider>
   );
 }
 
