@@ -5,7 +5,6 @@ import '../styles/main.css';
 import { useEffect } from 'react';
 import '../helpers/i18n';
 import BaseStyle from '../styles/baseStyles';
-import { SSRProvider } from 'react-bootstrap';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -24,12 +23,10 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <SSRProvider>
-      <Layout>
-        <BaseStyle />
-        <Component {...pageProps} />
-      </Layout>
-    </SSRProvider>
+    <Layout>
+      <BaseStyle />
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 
