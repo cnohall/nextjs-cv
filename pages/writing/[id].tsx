@@ -1,6 +1,6 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
-import Date from '../../components/atoms/date';
+import Date from '../../components/atoms/Date';
 import utilStyles from '../../styles/utils.module.css';
 import { Container } from 'react-bootstrap';
 
