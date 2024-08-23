@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/fonts/poppins/stylesheet.css';
 import '../styles/main.css';
 import { useEffect } from 'react';
-import '../helpers/i18n';
 import BaseStyle from '../styles/baseStyles';
+import { appWithTranslation } from 'next-i18next';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -30,4 +30,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

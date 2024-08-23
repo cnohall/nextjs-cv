@@ -1,11 +1,13 @@
+const { I18N_NAMESPACES, LANGUAGES } = require('./helpers/constants');
+
 module.exports = {
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'kr', 'sv', 'zh'],
+    defaultLocale: LANGUAGES.en,
+    locales: [LANGUAGES.en, LANGUAGES.kr, LANGUAGES.sv, LANGUAGES.zh],
   },
   localePath:
     typeof window === 'undefined'
       ? require('path').resolve('./public/locales')
       : '/public/locales/',
-  ns: ['common'],
+  ns: [I18N_NAMESPACES.COMMON],
 };

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'next-i18next';
@@ -7,6 +8,14 @@ import { I18N_NAMESPACES } from '../helpers/constants';
 
 import myImage from '../assets/images/cartoon_me.png';
 import styles from '../styles/Home.module.css';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [I18N_NAMESPACES.COMMON])),
+    },
+  };
+}
 
 export default function Home() {
   const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
