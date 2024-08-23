@@ -10,6 +10,7 @@ import myImage from '../assets/images/cartoon_me.png';
 import styles from '../styles/Home.module.css';
 import WorkExperience from '../components/molecules/WorkExperience';
 import ContactForm from '../components/molecules/ContactForm';
+import { StyledTitle } from './styles';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -31,7 +32,7 @@ const Home = () => {
       </Head>
       <Row xs={1} sm={2} className="d-flex align-items-center">
         <Col>
-          <h1>{t('common:frontendDeveloper')}</h1>
+          <StyledTitle>{t('common:frontendDeveloper')}</StyledTitle>
           <h3>{t('common:basedInKorea')}</h3>
         </Col>
         <Col className="d-flex justify-content-center mt-5">

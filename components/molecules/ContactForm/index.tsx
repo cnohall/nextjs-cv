@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import Head from 'next/head';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import styles from '../../../styles/Home.module.css';
 import emailjs from '@emailjs/browser';
@@ -52,12 +51,6 @@ const ContactForm = () => {
   };
   return (
     <Container className={styles.center} id="contact">
-      <Head>
-        <title>{'Contact Me'}</title>
-        {/* Change this for create better SEO */}
-        <meta name="description" content="Contact Chris Nohall" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Row xs={1} sm={2}>
         <Col>
           <h1 className="my-">Contact Me</h1>

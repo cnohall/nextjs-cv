@@ -9,12 +9,6 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const WorkExperience = () => (
   <div className={styles.container} id="work">
-    <Head>
-      <title>{"Chris Nohall's Work Experience"}</title>
-      {/* Change this for create better SEO */}
-      <meta name="description" content="Chris Nohall's Work Experience" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
     <h1>Work Experience</h1>
 
     <VerticalTimeline lineColor={'rgb(177,172,185)'}>
