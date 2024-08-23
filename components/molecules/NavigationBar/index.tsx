@@ -25,7 +25,6 @@ const Navigationbar = () => {
             <Nav.Link href="/#contact">{t('common:contact')}</Nav.Link>
             <Nav.Link href="/writing">{t('common:writing')}</Nav.Link>
             <Nav.Link href="/projects">{t('common:projects')}</Nav.Link>
-            <Nav.Link href="/contact">{t('common:contact')}</Nav.Link>
             <NavDropdown title={t('common:languages')} id="basic-nav-dropdown">
               <NavDropdown.Item onClick={() => changeLanguage(LANGUAGES.zh)}>
                 {t('common:chinese')}
