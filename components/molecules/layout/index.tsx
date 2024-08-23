@@ -1,8 +1,8 @@
-import Navigationbar from '../navbar';
-import Footer from '../footer';
+import Navigationbar from '../NavigationBar';
+import Footer from '../Footer';
 import styles from '../../../styles/Home.module.css';
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <>
       <Navigationbar />
@@ -10,4 +10,6 @@ export default function Layout({ children }) {
       <Footer />
     </>
   );
-}
+};
+
+export default Layout;

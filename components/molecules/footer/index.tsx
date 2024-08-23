@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import { BsGithub, BsLinkedin, BsStackOverflow } from 'react-icons/bs';
 

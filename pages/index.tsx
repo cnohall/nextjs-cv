@@ -8,6 +8,8 @@ import { I18N_NAMESPACES } from '../helpers/constants';
 
 import myImage from '../assets/images/cartoon_me.png';
 import styles from '../styles/Home.module.css';
+import WorkExperience from '../components/molecules/WorkExperience';
+import ContactForm from '../components/molecules/ContactForm';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -17,7 +19,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-export default function Home() {
+const Home = () => {
   const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
   return (
     <Container className={styles.center}>
@@ -42,6 +44,10 @@ export default function Home() {
           />
         </Col>
       </Row>
+      <WorkExperience />
+      <ContactForm />
     </Container>
   );
-}
+};
+
+export default Home;

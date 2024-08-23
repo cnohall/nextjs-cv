@@ -1,16 +1,15 @@
 import React, { useRef, useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import styles from '../styles/Home.module.css';
+import styles from '../../../styles/Home.module.css';
 import emailjs from '@emailjs/browser';
-import BootstrapToast from '../components/molecules/toast';
+import BootstrapToast from '../Toast';
 
 const messagePlaceholder =
   'Hi, we need a frontend developer to on our website at Company X. ' +
   'How soon can we hop on a call to discuss this?';
 
-export default function Contact() {
+const ContactForm = () => {
   const form = useRef();
   const [sentEmail, setSentEmail] = useState<boolean>(false);
   const [showToast, setShowToast] = useState<boolean>(false);
@@ -52,7 +51,7 @@ export default function Contact() {
     );
   };
   return (
-    <Container className={styles.center}>
+    <Container className={styles.center} id="contact">
       <Head>
         <title>{'Contact Me'}</title>
         {/* Change this for create better SEO */}
@@ -116,4 +115,6 @@ export default function Contact() {
       </Row>
     </Container>
   );
-}
+};
+
+export default ContactForm;

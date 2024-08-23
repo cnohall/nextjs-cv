@@ -1,4 +1,4 @@
-import Layout from '../components/molecules/layout';
+import Layout from '../components/molecules/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/fonts/poppins/stylesheet.css';
 import '../styles/main.css';

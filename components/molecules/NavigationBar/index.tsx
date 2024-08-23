@@ -5,7 +5,7 @@ import { DEFAULT_LANGUAGE, I18N_NAMESPACES, LANGUAGES } from '../../../helpers/c
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 
-export default function Navigationbar() {
+const Navigationbar = () => {
   const [language, setLanguage] = useState(DEFAULT_LANGUAGE); // TODO: Enable language change
   const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
 
@@ -20,8 +20,9 @@ export default function Navigationbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="/">{t('common:home')}</Nav.Link>
-            <Nav.Link href="/work">{t('common:work')}</Nav.Link>
+            <Nav.Link href="/#about">{t('common:about')}</Nav.Link>
+            <Nav.Link href="/#work">{t('common:work')}</Nav.Link>
+            <Nav.Link href="/#contact">{t('common:contact')}</Nav.Link>
             <Nav.Link href="/writing">{t('common:writing')}</Nav.Link>
             <Nav.Link href="/projects">{t('common:projects')}</Nav.Link>
             <Nav.Link href="/contact">{t('common:contact')}</Nav.Link>
@@ -44,4 +45,6 @@ export default function Navigationbar() {
       </Container>
     </Navbar>
   );
-}
+};
+
+export default Navigationbar;
