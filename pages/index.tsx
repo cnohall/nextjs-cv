@@ -10,7 +10,7 @@ import myImage from '../assets/images/cartoon_me.png';
 import styles from '../styles/Home.module.css';
 import WorkExperience from '../components/molecules/WorkExperience';
 import ContactForm from '../components/molecules/ContactForm';
-import { StyledTitle } from './styles';
+import { StyledTitle } from '../styles/styles';
 
 export async function getServerSideProps({ locale }) {
   return {
