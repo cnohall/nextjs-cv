@@ -6,10 +6,6 @@
   align-items: center;
 }
 
-.fullHeight {
-  min-height: calc(100vh - 120px);
-}
-
 .center {
   display: flex;
   flex-direction: column;
