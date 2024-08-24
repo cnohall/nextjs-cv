@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import { colors } from "../helpers/constants";
 
-import { colors } from "./variables";
 
 const BaseStyle = createGlobalStyle`
   html,
