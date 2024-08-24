@@ -6,10 +6,11 @@ import styles from '../../../styles/Home.module.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
+import { StyledTitle } from '../../../styles/styles';
 
 const WorkExperience = () => (
   <div className={styles.container} id="work">
-    <h1>Work Experience</h1>
+    <StyledTitle>Work Experience</StyledTitle>
 
     <VerticalTimeline lineColor={'rgb(177,172,185)'}>
       <VerticalTimelineElement

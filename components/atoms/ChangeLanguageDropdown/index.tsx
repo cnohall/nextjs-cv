@@ -20,6 +20,8 @@ const ChangeLanguageDropdown = () => {
 
   const changeLocale = async (locale: string) => {
     if (i18n.language !== locale) {
+      console.log('changeLocale', locale);
+      console.log('router.asPath', router.asPath);
       router.push(router.asPath, undefined, { locale });
     }
   };
