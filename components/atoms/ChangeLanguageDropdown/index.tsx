@@ -8,6 +8,7 @@ const ChangeLanguageDropdown = () => {
   const { t, i18n } = useTranslation([I18N_NAMESPACES.COMMON]);
   const router = useRouter();
 
+  // TODO: Find a better solution to avoid mismatch between client and server
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => {
     setHydrated(true);

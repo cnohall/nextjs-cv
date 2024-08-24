@@ -12,7 +12,7 @@
     "name": "Chris Nohall",
     "frontendDeveloper": "Hi, I'm $t(common:name)",
     "basedInKorea": "A frontend developer based in South Korea.",
-    "SEO": {
+    "seo": {
         "title": "Chris Nohall - Frontend Developer"
     }
 }

@@ -4,9 +4,22 @@ import { StyledRow, StyledTitle } from '../../../styles/styles';
 import { Col, Row } from 'react-bootstrap';
 import myImage from '../../../assets/images/cartoon_me.png';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
-  const { t } = useTranslation([I18N_NAMESPACES.COMMON], { useSuspense: false });
+  const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
+
+  // TODO: Find a better solution to avoid mismatch between client and server
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  if (!hydrated) {
+    // Returns null on first render, so the client and server match
+    return null;
+  }
+
   return (
     <StyledRow xs={1} sm={2} className="d-flex align-items-center">
       <Col>
