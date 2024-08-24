@@ -4,6 +4,7 @@ import '../styles/main.css';
 import { useEffect } from 'react';
 import BaseStyle from '../styles/baseStyles';
 import { appWithTranslation } from 'next-i18next';
+import nextI18nextConfig from '../next-i18next.config';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -29,4 +30,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18nextConfig);

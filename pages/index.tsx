@@ -12,7 +12,7 @@ import WorkExperience from '../components/molecules/WorkExperience';
 import ContactForm from '../components/molecules/ContactForm';
 import { StyledTitle } from './styles';
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [I18N_NAMESPACES.COMMON])),
