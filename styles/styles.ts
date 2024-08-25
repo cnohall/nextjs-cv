@@ -36,7 +36,7 @@ export const StyledRow = styled(Row)`
 export const StyledIcon = styled(Image)`
   height: 60px;
   width: 60px;
-  ${breakpoints.smDown} {
+  ${breakpoints.lgDown} {
     height: 40px;
     width: 40px;
   }
