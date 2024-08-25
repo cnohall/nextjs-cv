@@ -1,7 +1,19 @@
 import { Container, Row } from "react-bootstrap";
 import styled from "styled-components";
-import breakpoints from "../helpers/constants";
+import breakpoints, { colors } from "../helpers/constants";
 import Image from "next/image";
+
+export const HeadingXL = styled.h1`
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+`;
+
+export const StyledText = styled.p<{color: string}>`
+  color: ${props => props.color || colors.black};
+`;
 
 export const StyledTitle = styled.h1`
   font-weight: 900;
@@ -20,5 +32,12 @@ export const StyledIcon = styled(Image)`
   ${breakpoints.smDown} {
     height: 40px;
     width: 40px;
+  }
+`;
+
+export const WorkExperienceWrapper = styled.div`
+  margin: 240px 0;
+  ${breakpoints.smDown} {
+    margin: 120px 0;
   }
 `;

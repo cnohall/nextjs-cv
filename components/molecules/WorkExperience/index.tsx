@@ -5,10 +5,10 @@ import Blockonomics_icon from '../../../assets/images/blockonomics_icon.png';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
-import { StyledIcon, StyledTitle } from '../../../styles/styles';
+import { StyledIcon, StyledTitle, WorkExperienceWrapper } from '../../../styles/styles';
 
 const WorkExperience = () => (
-  <div id="work">
+  <WorkExperienceWrapper id="work">
     <StyledTitle>Work Experience</StyledTitle>
 
     <VerticalTimeline lineColor={'rgb(177,172,185)'}>
@@ -51,7 +51,7 @@ const WorkExperience = () => (
         <p>Required Skills: JavaScript, React, Node, MongoDB, Express.</p>
       </VerticalTimelineElement>
     </VerticalTimeline>
-  </div>
+  </WorkExperienceWrapper>
 );
 
 export default WorkExperience;

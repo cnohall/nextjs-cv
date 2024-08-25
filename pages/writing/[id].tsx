@@ -1,8 +1,9 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/atoms/Date';
-import utilStyles from '../../styles/utils.module.css';
 import { Container } from 'react-bootstrap';
+import { HeadingXL, StyledText } from '../../styles/styles';
+import { colors } from '../../helpers/constants';
 
 export default function Post({ postData }) {
   return (
@@ -11,10 +12,10 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <HeadingXL>{postData.title}</HeadingXL>
+        <StyledText color={colors.white}>
           <Date dateString={postData.date} />
-        </div>
+        </StyledText>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Container>

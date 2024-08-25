@@ -1,11 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 
 // TODO: Re-incorporate this when ready
 export default function Resume() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{"Chris Nohall's Projects"}</title>
         {/* Change this for create better SEO */}
