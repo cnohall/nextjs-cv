@@ -1,4 +1,4 @@
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 import breakpoints from "../helpers/constants";
 import Image from "next/image";

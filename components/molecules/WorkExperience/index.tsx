@@ -2,14 +2,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Gpd_icon from '../../../assets/images/GPD_icon.png';
 import Blockonomics_icon from '../../../assets/images/blockonomics_icon.png';
-import styles from '../../../styles/Home.module.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
 import { StyledIcon, StyledTitle } from '../../../styles/styles';
 
 const WorkExperience = () => (
-  <div className={styles.container} id="work">
+  <div id="work">
     <StyledTitle>Work Experience</StyledTitle>
 
     <VerticalTimeline lineColor={'rgb(177,172,185)'}>

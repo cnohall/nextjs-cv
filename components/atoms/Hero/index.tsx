@@ -36,7 +36,8 @@ const Hero = () => {
           priority
         />
       </Col>
-      <canvas data-engine="three.js r150" width="4526" height="1282" />
+      {/* TODO: Insert Three.js canvas */}
+      {/* <canvas data-engine="three.js r150" width="4526" height="1282" /> */}
     </StyledRow>
   );
 };
