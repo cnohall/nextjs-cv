@@ -80,8 +80,14 @@ const WorkExperience = () => (
       >
         <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
         <h4 className="vertical-timeline-element-subtitle">UAE Dentist</h4>
-        <p>Serverless architecture, Firebase, Authentication, Email marketing, Google Maps API.</p>
-        <p>Required Skills: JavaScript, React, Node, MongoDB, Express.</p>
+        <StyledParagraph>
+          Serverless Architecture and Firebase Integration: Developed serverless apps with Netlify,
+          implementing authentication and Google Maps API.
+        </StyledParagraph>
+        <StyledParagraph>
+          Full-Stack Development: Built web apps with JavaScript, React, Node.js, MongoDB, and
+          Express for seamless user experiences.
+        </StyledParagraph>
       </VerticalTimelineElement>
     </VerticalTimeline>
   </WorkExperienceWrapper>
