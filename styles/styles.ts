@@ -24,8 +24,8 @@ export const StyledSubheading = styled.h5`
   color: ${colors.silver};
 `;
 
-export const StyledParagraph = styled.p`
-  color: ${colors.silver};
+export const StyledParagraph = styled.p<{color?: string}>`
+  color: ${props => props.color || colors.white};
   max-width: 820px;
 `;
 
@@ -43,14 +43,15 @@ export const StyledIcon = styled(Image)`
 `;
 
 export const WorkExperienceWrapper = styled.div`
-  margin: 240px 0;
-  ${breakpoints.xlDown} {
-    margin: 160px 0;
-  }
+  margin: 160px 0;
   ${breakpoints.lgDown} {
     margin: 120px 0;
   }
   ${breakpoints.smDown} {
     margin: 80px 0;
   }
+`;
+
+export const ContactFormWrapper = styled(Row)`
+  margin-bottom: 40px;
 `;

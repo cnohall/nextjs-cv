@@ -5,7 +5,13 @@ import Blockonomics_icon from '../../../assets/images/blockonomics_icon.png';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
-import { StyledIcon, StyledTitle, WorkExperienceWrapper } from '../../../styles/styles';
+import {
+  StyledIcon,
+  StyledParagraph,
+  StyledTitle,
+  WorkExperienceWrapper,
+} from '../../../styles/styles';
+import { colors } from '../../../helpers/constants';
 
 const WorkExperience = () => (
   <WorkExperienceWrapper id="work">
@@ -21,10 +27,22 @@ const WorkExperience = () => (
       >
         <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
         <h4 className="vertical-timeline-element-subtitle">Good Pair Days</h4>
-        <p>
-          Internationalization, Payment solutions, Product Managment, Performance enhancement, SEO.
-        </p>
-        <p>Required Skills: TypeScript, React, React-Native, i18n, GraphQL.</p>
+        <StyledParagraph>
+          Implemented New Designs and Features: Utilized React and React Native to develop and
+          enhance web and mobile applications, ensuring seamless user experiences.
+        </StyledParagraph>
+        <StyledParagraph>
+          Project Leadership: Led projects from initial Figma designs to final implementation,
+          taking full ownership to deliver user-friendly interfaces.
+        </StyledParagraph>
+        <StyledParagraph>
+          End-to-End Testing: Integrated end-to-end testing using Cypress, ensuring robust
+          applications.
+        </StyledParagraph>
+        <StyledParagraph>
+          Responsive Design: Created responsive web pages that functioned flawlessly across a wide
+          range of devices, enhancing usability and visual appeal.
+        </StyledParagraph>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -35,7 +53,22 @@ const WorkExperience = () => (
       >
         <h3 className="vertical-timeline-element-title">PHP Developer</h3>
         <h4 className="vertical-timeline-element-subtitle">Blockonomics</h4>
-        <p>User Experience, Visual Design, WordPress, PrestaShop, WHMCS, Blockchain.</p>
+        <StyledParagraph>
+          Enhanced Payment Solutions: Utilized PHP, Python, WordPress, and other CMS platforms to
+          streamline customer access to Blockonomics’ payment solutions.
+        </StyledParagraph>
+        <StyledParagraph>
+          CMS Integration: Integrated and customized various CMSs to support seamless payment
+          processing and improve user experience.
+        </StyledParagraph>
+        <StyledParagraph>
+          Technical Expertise: Leveraged strong technical skills to develop and maintain robust,
+          scalable solutions for cryptocurrency transactions.
+        </StyledParagraph>
+        <StyledParagraph>
+          Customer Focus: Ensured that payment solutions were user-friendly and accessible,
+          enhancing overall customer satisfaction.
+        </StyledParagraph>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"

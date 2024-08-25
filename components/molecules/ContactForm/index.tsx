@@ -2,7 +2,8 @@ import React, { useRef, useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import BootstrapToast from '../Toast';
-import { StyledTitle } from '../../../styles/styles';
+import { ContactFormWrapper, StyledParagraph, StyledTitle } from '../../../styles/styles';
+import { colors } from '../../../helpers/constants';
 
 const messagePlaceholder =
   'Hi, we need a frontend developer to on our website at Company X. ' +
@@ -50,17 +51,19 @@ const ContactForm = () => {
     );
   };
   return (
-    <Row xs={1} sm={2}>
+    <ContactFormWrapper xs={1} sm={2}>
       <Col>
         <StyledTitle>Contact Me</StyledTitle>
-        <h4 className="my-4">
+        <StyledParagraph color={colors.silver}>
           {'Want to say "Hey!"? Got something you\'d like to ask? '}
           {'New project or opportunity? Want to hire me? Contact me!'}
-        </h4>
-        <h4 className="my-4">
+        </StyledParagraph>
+        <StyledParagraph color={colors.silver}>
           Use the form. Alternatively, shoot me an email at chris@nohall.dev.
-        </h4>
-        <h4 className="my-4">Prefer a face to face? Schedule a call.</h4>
+        </StyledParagraph>
+        <StyledParagraph color={colors.silver}>
+          Prefer a face to face? Schedule a call.
+        </StyledParagraph>
       </Col>
       <Col>
         {showToast && <BootstrapToast message={message} setShowToast={setShowToast} />}
@@ -99,7 +102,7 @@ const ContactForm = () => {
           </Button>
         </Form>
       </Col>
-    </Row>
+    </ContactFormWrapper>
   );
 };
 
