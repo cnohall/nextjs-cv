@@ -19,6 +19,16 @@ export const StyledTitle = styled.h1`
   font-weight: 900;
 `;
 
+export const StyledSubheading = styled.h5`
+  text-transform: uppercase;
+  color: ${colors.silver};
+`;
+
+export const StyledParagraph = styled.p`
+  color: ${colors.silver};
+  max-width: 820px;
+`;
+
 export const StyledRow = styled(Row)`
   margin: 80px 0;
   ${breakpoints.smDown} {
@@ -37,7 +47,13 @@ export const StyledIcon = styled(Image)`
 
 export const WorkExperienceWrapper = styled.div`
   margin: 240px 0;
-  ${breakpoints.smDown} {
+  ${breakpoints.xlDown} {
+    margin: 160px 0;
+  }
+  ${breakpoints.lgDown} {
     margin: 120px 0;
+  }
+  ${breakpoints.smDown} {
+    margin: 80px 0;
   }
 `;

@@ -15,6 +15,7 @@ export const LANGUAGE_STORAGE_KEY = "language";
 
 export const colors = {
   white: "#FFFFFF",
+  silver: "#AAA6CF",
   black: "#000000",
   background: "#171321",
 };

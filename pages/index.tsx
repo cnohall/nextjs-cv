@@ -6,6 +6,7 @@ import { I18N_NAMESPACES } from '../helpers/constants';
 import WorkExperience from '../components/molecules/WorkExperience';
 import ContactForm from '../components/molecules/ContactForm';
 import Hero from '../components/atoms/Hero';
+import Introduction from '../components/atoms/Introduction';
 
 export async function getServerSideProps({ locale }) {
   return {
@@ -26,6 +27,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Introduction />
       <WorkExperience />
       <ContactForm />
     </Container>
