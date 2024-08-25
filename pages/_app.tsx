@@ -1,6 +1,5 @@
 import Layout from '../components/molecules/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/main.css';
 import { useEffect } from 'react';
 import BaseStyle from '../styles/baseStyles';
 import { appWithTranslation } from 'next-i18next';

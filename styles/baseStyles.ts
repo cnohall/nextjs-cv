@@ -7,6 +7,8 @@ const BaseStyle = createGlobalStyle`
   body {
     background-color: ${colors.background};
     color: ${colors.white};
+    font-family: Poppins, sans-serif !important;
+    font-weight: 500 !important;
   }
 `;
 
