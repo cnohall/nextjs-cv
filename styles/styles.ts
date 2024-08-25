@@ -30,10 +30,7 @@ export const StyledParagraph = styled.p`
 `;
 
 export const StyledRow = styled(Row)`
-  margin: 80px 0;
-  ${breakpoints.smDown} {
-    margin: 40px 0;
-  }
+  height: calc(100vh - 60px);
 `;
 
 export const StyledIcon = styled(Image)`
