@@ -55,3 +55,13 @@ export const WorkExperienceWrapper = styled.div`
 export const ContactFormWrapper = styled(Row)`
   margin-bottom: 40px;
 `;
+
+export const CentralizedColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  ${breakpoints.lgUp} {
+    justify-content: center;
+    align-items: center;
+  }
+`;

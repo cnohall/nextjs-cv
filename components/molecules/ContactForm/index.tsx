@@ -51,7 +51,7 @@ const ContactForm = () => {
     );
   };
   return (
-    <ContactFormWrapper xs={1} sm={2}>
+    <ContactFormWrapper xs={1} sm={2} id="contact">
       <Col>
         <StyledTitle>Contact Me</StyledTitle>
         <StyledParagraph color={colors.silver}>

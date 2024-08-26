@@ -6,8 +6,10 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
 import {
+  CentralizedColumn,
   StyledIcon,
   StyledParagraph,
+  StyledSubheading,
   StyledTitle,
   WorkExperienceWrapper,
 } from '../../../styles/styles';
@@ -15,7 +17,10 @@ import { colors } from '../../../helpers/constants';
 
 const WorkExperience = () => (
   <WorkExperienceWrapper id="work">
-    <StyledTitle>Work Experience</StyledTitle>
+    <CentralizedColumn>
+      <StyledSubheading>What I Have Done So Far</StyledSubheading>
+      <StyledTitle>Work Experience</StyledTitle>
+    </CentralizedColumn>
 
     <VerticalTimeline lineColor={'rgb(177,172,185)'}>
       <VerticalTimelineElement
