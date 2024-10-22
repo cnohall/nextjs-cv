@@ -7,6 +7,7 @@ import WorkExperience from '../components/molecules/WorkExperience';
 import ContactForm from '../components/molecules/ContactForm';
 import Hero from '../components/atoms/Hero';
 import Introduction from '../components/atoms/Introduction';
+import ComputersCanvas from '../components/atoms/ComputerCanvas';
 
 export async function getServerSideProps({ locale }) {
   return {
@@ -26,6 +27,7 @@ const Home = () => {
         <meta name="description" content="Chris Nohall's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <ComputersCanvas />
       <Hero />
       <Introduction />
       <WorkExperience />
