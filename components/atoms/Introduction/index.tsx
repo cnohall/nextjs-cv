@@ -1,17 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import { StyledSubheading, StyledTitle, StyledParagraph } from '../../../styles/styles';
-import { colors } from '../../../helpers/constants';
+import { colors, I18N_NAMESPACES } from '../../../helpers/constants';
 
 const Introduction: React.FC = () => {
+  const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
+
   return (
-    <div>
-      <StyledSubheading>Introduction</StyledSubheading>
-      <StyledTitle>Overview</StyledTitle>
+    <div id="about">
+      <StyledSubheading>{t('common:about')}</StyledSubheading>
+      <StyledTitle>{t('common:intro_title')}</StyledTitle>
       <StyledParagraph color={colors.silver}>
-        I&apos;m a skilled Frontend developer with experience in TypeScript and JavaScript, and
-        expertise in frameworks like React, React-Native, and Next. I&apos;m a quick learner and
-        collaborate closely with clients to create efficient, scalable, and user-friendly solutions
-        that solve real-world problems. Let&apos;s work together to bring your ideas to life!
+        {t('common:intro_text')}
       </StyledParagraph>
     </div>
   );

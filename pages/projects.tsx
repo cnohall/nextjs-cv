@@ -9,17 +9,17 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'PolarisAudit',
+      title: 'PolarisAudit (Founder)',
       description: t('common:polarisaudit_desc'),
       link: 'https://polarisaudit.com/',
     },
     {
-      title: 'EmptyInbox',
+      title: 'EmptyInbox (Founder)',
       description: t('common:emptyinbox_desc'),
       link: 'https://emptyinbox.me/',
     },
     {
-      title: 'Ark Explorer', // Uppdaterat från RKExplorer
+      title: 'Ark Explorer (Lead Developer)',
       description: t('common:rkexplorer_desc'),
       link: 'https://rkexplorer.blockonomics.co/',
     },
