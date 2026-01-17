@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { I18N_NAMESPACES } from '../../../helpers/constants';
 import Image from 'next/image';
 import myImage from '../../../assets/images/cartoon_me.png';

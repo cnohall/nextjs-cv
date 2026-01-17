@@ -3,6 +3,8 @@ import { getSortedPostsData } from '../lib/posts';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import cardStyles from '../styles/card.module.css';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { I18N_NAMESPACES } from '../helpers/constants';
 
 // TODO: Re-incorporate this when ready
 export default function Writing({ allPostsData }) {
@@ -38,11 +40,12 @@ export default function Writing({ allPostsData }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
+      ...(await serverSideTranslations(locale, [I18N_NAMESPACES.COMMON])),
     },
   };
 }
