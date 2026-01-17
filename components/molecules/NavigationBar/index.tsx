@@ -1,27 +1,29 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
-import { DEFAULT_LANGUAGE, I18N_NAMESPACES } from '../../../helpers/constants';
-import { useState } from 'react';
+import { I18N_NAMESPACES } from '../../../helpers/constants';
 import { useTranslation } from 'next-i18next';
 import ChangeLanguageDropdown from '../../atoms/ChangeLanguageDropdown';
+import Link from 'next/link';
 
 const Navigationbar = () => {
   const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
 
   return (
-    <Navbar variant="dark">
-      <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="m-auto">
-            <Nav.Link href="/#about">{t('common:about')}</Nav.Link>
-            <Nav.Link href="/#work">{t('common:work')}</Nav.Link>
-            <Nav.Link href="/projects">{t('common:projects')}</Nav.Link> {/* Ny länk */}
-            <Nav.Link href="/#contact">{t('common:contact')}</Nav.Link>
-            <ChangeLanguageDropdown />
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="py-6">
+      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <Link href="/" className="text-xl font-black tracking-tighter hover:text-green-500 transition-colors">
+          CN.
+        </Link>
+        
+        <div className="hidden md:flex items-center gap-8">
+          <Link href="/#about" className="text-sm font-medium text-[#AAA6CF] hover:text-white transition-colors">{t('common:about')}</Link>
+          <Link href="/#work" className="text-sm font-medium text-[#AAA6CF] hover:text-white transition-colors">{t('common:work')}</Link>
+          <Link href="/projects" className="text-sm font-medium text-[#AAA6CF] hover:text-white transition-colors">{t('common:projects')}</Link>
+          <Link href="/#contact" className="text-sm font-medium text-[#AAA6CF] hover:text-white transition-colors">{t('common:contact')}</Link>
+          <ChangeLanguageDropdown />
+        </div>
+
+        {/* Mobil-meny kan läggas till här vid behov */}
+      </div>
+    </nav>
   );
 };
 

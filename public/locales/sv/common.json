@@ -1,7 +1,7 @@
 {
     "about": "Om mig",
-    "work": "Arbetserfarenhet",
-    "writing": "Blog",
+    "work": "Erfarenhet",
+    "writing": "Skrivande",
     "projects": "Projekt",
     "contact": "Kontakt",
     "languages": "Språk",
@@ -9,7 +9,16 @@
     "swedish": "Svenska",
     "korean": "Koreanska",
     "chinese": "Kinesiska",
-    "name": "Christopher Nohall",
-    "frontendDeveloper": "Hej, jag är $t(common:name)",
-    "basedInKorea": "Hej! Jag är en frontend-utvecklare som bor i Sydkorea."
+    "name": "Chris Nohall",
+    "frontendDeveloper": "Senior Fullstack-utvecklare & Team Lead",
+    "basedInKorea": "Skalar Web3-lösningar och integritetsfokuserade produkter.",
+    "intro_title": "Översikt",
+    "intro_text": "Jag är en resultatorienterad utvecklare med fokus på Web3, integritet och skalbar arkitektur. Som nuvarande utvecklingschef på Blockonomics specialiserar jag mig på att bygga robusta system med React, TypeScript och Node.js. Utöver ingenjörskonst är jag produktgrundare och har lanserat flera plattformar från koncept till produktion.",
+    "projects_title": "Projekt",
+    "projects_description": "En samling verktyg och plattformar jag har byggt.",
+    "visit_website": "Besök hemsida",
+    "copyright": "© {{year}} Chris Nohall. Alla rättigheter förbehållna.",
+    "built_with": "Byggd med Next.js & Tailwind CSS",
+    "view_projects": "Visa projekt",
+    "get_in_touch": "Kontakta mig"
 }
