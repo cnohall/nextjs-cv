@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Gpd_icon from '../../../assets/images/GPD_icon.png';
 import Blockonomics_icon from '../../../assets/images/blockonomics_icon.png';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { FaTooth, FaShieldAlt, FaEnvelopeOpenText, FaBitcoin } from 'react-icons/fa';
+import { FaTooth } from 'react-icons/fa';
 import 'react-vertical-timeline-component/style.min.css';
 import {
   CentralizedColumn,
@@ -23,60 +23,6 @@ const WorkExperience = () => (
     </CentralizedColumn>
 
     <VerticalTimeline lineColor={'rgb(177,172,185)'}>
-      {/* PolarisAudit */}
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2024 - Present"
-        contentStyle={{ background: 'rgb(177,172,185)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(177,172,185)' }}
-        iconStyle={{ background: colors.background, color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        icon={<FaShieldAlt size={25} />}
-      >
-        <h3 className="vertical-timeline-element-title">Lead Developer / Founder</h3>
-        <h4 className="vertical-timeline-element-subtitle">PolarisAudit</h4>
-        <StyledParagraph>
-          Developed a comprehensive website compliance tool that audits privacy (GDPR), security, accessibility, and performance.
-        </StyledParagraph>
-        <StyledParagraph>
-          Built an automated scanning engine and an interactive dashboard providing step-by-step fix instructions with code examples.
-        </StyledParagraph>
-      </VerticalTimelineElement>
-
-      {/* EmptyInbox */}
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2023 - 2024"
-        contentStyle={{ background: 'rgb(177,172,185)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(177,172,185)' }}
-        iconStyle={{ background: colors.background, color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        icon={<FaEnvelopeOpenText size={25} />}
-      >
-        <h3 className="vertical-timeline-element-title">Full Stack Developer</h3>
-        <h4 className="vertical-timeline-element-subtitle">EmptyInbox</h4>
-        <StyledParagraph>
-          Created a privacy-first email service with auto-deletion and secure Passkey-based authentication.
-        </StyledParagraph>
-        <StyledParagraph>
-          Implemented intelligent detection for activation codes and multi-inbox management.
-        </StyledParagraph>
-      </VerticalTimelineElement>
-
-      {/* Blockonomics RKExplorer */}
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2021 - 2023"
-        contentStyle={{ background: 'rgb(177,172,185)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(177,172,185)' }}
-        iconStyle={{ background: colors.background, color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        icon={<FaBitcoin size={25} />}
-      >
-        <h3 className="vertical-timeline-element-title">Frontend Engineer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Blockonomics (RKExplorer)</h4>
-        <StyledParagraph>
-          Contributed to the development of a Bitcoin block explorer and real-time payment tracking interfaces.
-        </StyledParagraph>
-      </VerticalTimelineElement>
-
       {/* Good Pair Days */}
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -96,7 +42,7 @@ const WorkExperience = () => (
           taking full ownership to deliver user-friendly interfaces.
         </StyledParagraph>
         <StyledParagraph>
-          End-to-End Testing: Integrated end-to-end testing using Cypress, ensuring robust
+          End-to-end Testing: Integrated end-to-end testing using Cypress, ensuring robust
           applications.
         </StyledParagraph>
         <StyledParagraph>

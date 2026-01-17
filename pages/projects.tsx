@@ -19,43 +19,45 @@ export default function Projects() {
       link: 'https://emptyinbox.me/',
     },
     {
-      title: 'RKExplorer',
+      title: 'Ark Explorer', // Uppdaterat från RKExplorer
       description: t('common:rkexplorer_desc'),
       link: 'https://rkexplorer.blockonomics.co/',
     },
   ];
 
   return (
-    <Container className="py-5">
-      <Head>
-        <title>{t('common:projects_title')} | Chris Nohall</title>
-      </Head>
-      <h1 className="mb-4 text-white">{t('common:projects_title')}</h1>
-      <p className="mb-5 text-silver">{t('common:projects_description')}</p>
-      
-      <Row>
-        {projects.map((project, index) => (
-          <Col key={index} md={4} className="mb-4">
-            <Card className="h-100 bg-dark text-white border-secondary">
-              <Card.Body className="d-flex flex-column">
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text className="text-silver flex-grow-1">
-                  {project.description}
-                </Card.Text>
-                <Button 
-                  variant="outline-success" 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  {t('common:visit_website')}
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div style={{ backgroundColor: '#171321', minHeight: '100vh' }}>
+      <Container className="py-5">
+        <Head>
+          <title>{t('common:projects_title')} | Chris Nohall</title>
+        </Head>
+        <h1 className="mb-4 text-white">{t('common:projects_title')}</h1>
+        <p className="mb-5 text-silver">{t('common:projects_description')}</p>
+        
+        <Row>
+          {projects.map((project, index) => (
+            <Col key={index} md={4} className="mb-4">
+              <Card className="h-100 bg-dark text-white border-secondary">
+                <Card.Body className="d-flex flex-column">
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text className="text-silver flex-grow-1">
+                    {project.description}
+                  </Card.Text>
+                  <Button 
+                    variant="outline-success" 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    {t('common:visit_website')}
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </div>
   );
 }
 
