@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   return (
     <div className={`${poppins.className} bg-[#171321] text-white min-h-screen flex flex-col`}>
       <Navigationbar />
-      <main className="flex-grow">
+      <main className="flex-grow max-w-5xl mx-auto px-4">
         {children}
       </main>
       <Footer />

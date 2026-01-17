@@ -4,6 +4,7 @@ import WorkExperience from '../components/molecules/WorkExperience';
 import ContactForm from '../components/molecules/ContactForm';
 import Hero from '../components/atoms/Hero';
 import Introduction from '../components/atoms/Introduction';
+import { I18N_NAMESPACES } from '../helpers/constants';
 
 export async function getServerSideProps({ locale }) {
   return {

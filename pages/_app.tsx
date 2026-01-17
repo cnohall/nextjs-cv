@@ -1,21 +1,18 @@
 import Layout from '../components/molecules/Layout';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/tailwind.css';
 import { useEffect } from 'react';
-import BaseStyle from '../styles/baseStyles';
+
 import { appWithTranslation } from 'next-i18next';
-import nextI18nextConfig from '../next-i18next.config';
+// Import your config explicitly
+import nextI18nextConfig from '../next-i18next.config'; 
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('/sw.tsx').then(
-          function (registration) {
-            console.log('Service Worker registration successful with scope: ', registration.scope);
-          },
-          function (err) {
-            console.log('Service Worker registration failed: ', err);
-          },
+          (registration) => console.log('SW registered: ', registration.scope),
+          (err) => console.log('SW registration failed: ', err)
         );
       });
     }
@@ -23,10 +20,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <BaseStyle />
       <Component {...pageProps} />
     </Layout>
   );
 }
 
+// Pass the config as the second argument to fix the "missing config" error
 export default appWithTranslation(MyApp, nextI18nextConfig);

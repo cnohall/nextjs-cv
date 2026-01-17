@@ -1,42 +1,38 @@
 import Head from 'next/head';
 import { getSortedPostsData } from '../lib/posts';
-import { Container, Card, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
-import cardStyles from '../styles/card.module.css';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { I18N_NAMESPACES } from '../helpers/constants';
 
 // TODO: Re-incorporate this when ready
 export default function Writing({ allPostsData }) {
   return (
-    <Container className="white">
+    <div className="container mx-auto px-4 text-white">
       <Head>
-        <title>{"Chris Nohall's Writing"}</title>
+        <title>{t('common:writing')}{t('common:page_title_separator')}</title>
       </Head>
       <h3 className="my-5">
-        {
-          'Welcome to my writting corner! I write about coding, with an easy-going and personal perspective.'
-        }
+        {t('common:writing_welcome_message')}
       </h3>
-      <Row xs={1} sm={2} className="d-flex align-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
         {allPostsData.map(({ id, date, title, description, readtime }) => (
-          <Col key={id} className="my-2">
+          <div key={id} className="my-2">
             <Link href={`/writing/${id}`} passHref>
-              <Card className={cardStyles.card} role="button" style={{ height: '10rem' }}>
-                <Card.Body>
-                  <Card.Title>{title}</Card.Title>
-                  <Card.Text>{description || ''}</Card.Text>
-                  <Card.Text>
-                    <small>{`Posted: ${date}`}</small>
-                    <small>{` Read time: ${readtime || ''}`}</small>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <div className="bg-[rgb(177,172,185)] rounded-md overflow-hidden cursor-pointer shadow-lg transition-all ease-in-out duration-200 hover:scale-105 hover:shadow-xl text-gray-100 h-40 flex flex-col justify-between">
+                <div className="p-4">
+                  <h5 className="text-lg font-bold">{title}</h5>
+                  <p className="text-sm">{description || ''}</p>
+                </div>
+                <div className="p-4 bg-black bg-opacity-10">
+                  <small className="text-xs">{t('common:writing_posted_prefix')}{date}</small>
+                  <small className="text-xs ml-2">{t('common:writing_read_time_prefix')}{readtime || ''}</small>
+                </div>
+              </div>
             </Link>
-          </Col>
+          </div>
         ))}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 }
 

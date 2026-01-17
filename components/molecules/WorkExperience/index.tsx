@@ -27,38 +27,38 @@ const WorkExperience = () => {
           },
           {
             id: 'gpd',
-            title: 'Frontend Developer',
-            company: 'Good Pair Days',
-            date: 'Aug 2021 - Present',
+            title: t('common:job_title_frontend_developer'),
+            company: t('common:job_company_good_pair_days'),
+            date: t('common:job_date_gpd'),
             descs: [
-              'Implemented New Designs and Features: Utilized React and React Native to develop and enhance web and mobile applications, ensuring seamless user experiences.',
-              'Project Leadership: Led projects from initial Figma designs to final implementation, taking full ownership to deliver user-friendly interfaces.',
-              'End-to-end Testing: Integrated end-to-end testing using Cypress, ensuring robust applications.',
-              'Responsive Design: Created responsive web pages that functioned flawlessly across a wide range of devices, enhancing usability and visual appeal.'
+              t('common:job_gpd_desc1'),
+              t('common:job_gpd_desc2'),
+              t('common:job_gpd_desc3'),
+              t('common:job_gpd_desc4')
             ],
             icon: Gpd_icon
           },
           {
             id: 'blockonomics',
-            title: 'PHP Developer',
-            company: 'Blockonomics',
-            date: 'Feb 2021 - July 2021',
+            title: t('common:job_title_php_developer'),
+            company: t('common:job_company_blockonomics'),
+            date: t('common:job_date_blockonomics'),
             descs: [
-              'Enhanced Payment Solutions: Utilized PHP, Python, WordPress, and other CMS platforms to streamline customer access to Blockonomics’ payment solutions.',
-              'CMS Integration: Integrated and customized various CMSs to support seamless payment processing and improve user experience.',
-              'Technical Expertise: Leveraged strong technical skills to develop and maintain robust, scalable solutions for cryptocurrency transactions.',
-              'Customer Focus: Ensured that payment solutions were user-friendly and accessible, enhancing overall customer satisfaction.'
+              t('common:job_blockonomics_desc1'),
+              t('common:job_blockonomics_desc2'),
+              t('common:job_blockonomics_desc3'),
+              t('common:job_blockonomics_desc4')
             ],
             icon: Blockonomics_icon
           },
           {
             id: 'uaedentist',
-            title: 'Full Stack Developer',
-            company: 'UAE Dentist',
-            date: 'Sep 2020 - Jan 2021',
+            title: t('common:job_title_fullstack_developer'),
+            company: t('common:job_company_uae_dentist'),
+            date: t('common:job_date_uae'),
             descs: [
-              'Serverless Architecture and Firebase Integration: Developed serverless apps with Netlify, implementing authentication and Google Maps API.',
-              'Full-Stack Development: Built web apps with JavaScript, React, Node.js, MongoDB, and Express for seamless user experiences.'
+              t('common:job_uae_desc1'),
+              t('common:job_uae_desc2')
             ],
             icon: Gpd_icon
           },
