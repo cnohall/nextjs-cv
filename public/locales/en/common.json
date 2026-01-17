@@ -14,5 +14,11 @@
     "basedInKorea": "A Frontend developer based in South Korea.",
     "seo": {
         "title": "Chris Nohall - Frontend Developer"
-    }
+    },
+    "projects_title": "Projects",
+    "projects_description": "A collection of tools and platforms I've built.",
+    "visit_website": "Visit Website",
+    "polarisaudit_desc": "Website compliance platform for privacy, security, and accessibility.",
+    "emptyinbox_desc": "Privacy-focused temporary email service with Passkey authentication.",
+    "rkexplorer_desc": "Bitcoin block explorer and payment tracking tools."
 }
