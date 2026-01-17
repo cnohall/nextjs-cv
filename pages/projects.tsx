@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { I18N_NAMESPACES } from '../helpers/constants';
@@ -43,14 +43,14 @@ export default function Projects() {
                   <Card.Text className="text-silver flex-grow-1">
                     {project.description}
                   </Card.Text>
-                  <Button 
-                    variant="outline-success" 
+                  <a 
                     href={project.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold transition-all mt-auto"
                   >
                     {t('common:visit_website')}
-                  </Button>
+                  </a>
                 </Card.Body>
               </Card>
             </Col>

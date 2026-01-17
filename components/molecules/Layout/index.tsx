@@ -9,9 +9,11 @@ const poppins = Poppins({
 
 const Layout = ({ children }) => {
   return (
-    <div className={poppins.className}>
+    <div className={`${poppins.className} bg-[#171321] text-white min-h-screen flex flex-col`}>
       <Navigationbar />
-      {children}
+      <main className="flex-grow">
+        {children}
+      </main>
       <Footer />
     </div>
   );

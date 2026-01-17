@@ -1,8 +1,5 @@
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Container } from 'react-bootstrap';
-import { useTranslation } from 'next-i18next';
-import { I18N_NAMESPACES } from '../helpers/constants';
 import WorkExperience from '../components/molecules/WorkExperience';
 import ContactForm from '../components/molecules/ContactForm';
 import Hero from '../components/atoms/Hero';
@@ -17,20 +14,13 @@ export async function getServerSideProps({ locale }) {
 }
 
 const Home = () => {
-  const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
   return (
-    <Container>
-      <Head>
-        <title>{t('common:seo.title')}</title>
-        {/* Change this for create better SEO */}
-        <meta name="description" content="Chris Nohall's Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="bg-[#171321] text-white min-h-screen flex flex-col">
       <Hero />
       <Introduction />
       <WorkExperience />
       <ContactForm />
-    </Container>
+    </div>
   );
 };
 
