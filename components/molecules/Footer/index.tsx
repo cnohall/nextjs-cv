@@ -13,17 +13,29 @@ export default function Footer() {
           <p className="text-[#AAA6CF] text-sm">{t('common:copyright', { year })}</p>
           <p className="text-[#AAA6CF]/50 text-xs mt-1">{t('common:built_with')}</p>
         </div>
-        
+
         <div className="flex items-center gap-6">
           <div className="flex gap-4">
-            <a href="https://github.com/cnohall/cnohall" target="_blank" className="text-[#AAA6CF] hover:text-white transition-colors">
+            <a
+              href="https://github.com/cnohall/cnohall"
+              target="_blank"
+              className="text-[#AAA6CF] hover:text-white transition-colors"
+            >
               <BsGithub size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/christopher-nohall/" target="_blank" className="text-[#AAA6CF] hover:text-white transition-colors">
+            <a
+              href="https://www.linkedin.com/in/christopher-nohall/"
+              target="_blank"
+              className="text-[#AAA6CF] hover:text-white transition-colors"
+            >
               <BsLinkedin size={24} />
             </a>
           </div>
-          <a href="/resume/Chris_Nohall_CV.pdf" target="_blank" className="bg-white/5 hover:bg-white/10 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all border border-white/10">
+          <a
+            href="/resume/Chris_Nohall_CV.pdf"
+            target="_blank"
+            className="bg-white/5 hover:bg-white/10 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all border border-white/10"
+          >
             {t('common:resume')}
           </a>
         </div>

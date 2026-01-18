@@ -9,11 +9,12 @@ export default function Writing({ allPostsData }) {
   return (
     <div className="container mx-auto px-4 text-white">
       <Head>
-        <title>{t('common:writing')}{t('common:page_title_separator')}</title>
+        <title>
+          {t('common:writing')}
+          {t('common:page_title_separator')}
+        </title>
       </Head>
-      <h3 className="my-5">
-        {t('common:writing_welcome_message')}
-      </h3>
+      <h3 className="my-5">{t('common:writing_welcome_message')}</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
         {allPostsData.map(({ id, date, title, description, readtime }) => (
           <div key={id} className="my-2">
@@ -24,8 +25,14 @@ export default function Writing({ allPostsData }) {
                   <p className="text-sm">{description || ''}</p>
                 </div>
                 <div className="p-4 bg-black bg-opacity-10">
-                  <small className="text-xs">{t('common:writing_posted_prefix')}{date}</small>
-                  <small className="text-xs ml-2">{t('common:writing_read_time_prefix')}{readtime || ''}</small>
+                  <small className="text-xs">
+                    {t('common:writing_posted_prefix')}
+                    {date}
+                  </small>
+                  <small className="text-xs ml-2">
+                    {t('common:writing_read_time_prefix')}
+                    {readtime || ''}
+                  </small>
                 </div>
               </div>
             </Link>

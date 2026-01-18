@@ -23,4 +23,3 @@ const BootstrapToast = (props) => {
 };
 
 export default BootstrapToast;
-

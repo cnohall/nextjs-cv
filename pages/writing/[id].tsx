@@ -9,7 +9,9 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article className="prose prose-invert max-w-none">
-        <h1 className="text-4xl leading-tight font-extrabold tracking-tight my-4">{postData.title}</h1>
+        <h1 className="text-4xl leading-tight font-extrabold tracking-tight my-4">
+          {postData.title}
+        </h1>
         <p className="text-white">
           <Date dateString={postData.date} />
         </p>

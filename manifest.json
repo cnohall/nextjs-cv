@@ -1,21 +1,20 @@
 {
-    "short_name": "CNOHALLCV",
-    "name": "Chris Nohall's CV",
-    "start_url": ".",
-    "icons": [
-        {
-            "src": "/public/gongdo_icon.jpg",
-            "sizes": "192x192",
-            "type": "image/jpg"
-        },
-        {
-            "src": "/public/gongdo_icon.jpg",
-            "sizes": "512x512",
-            "type": "image/jpg"
-        }
-    ],
-    "theme_color": "#ff8361",
-    "background_color": "#ff8361",
-    "display": "standalone"
-  }
-  
+  "short_name": "CNOHALLCV",
+  "name": "Chris Nohall's CV",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "/public/gongdo_icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/public/gongdo_icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "theme_color": "#ff8361",
+  "background_color": "#ff8361",
+  "display": "standalone"
+}

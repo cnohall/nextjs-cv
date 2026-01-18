@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 import { appWithTranslation } from 'next-i18next';
 // Import your config explicitly
-import nextI18nextConfig from '../next-i18next.config'; 
+import nextI18nextConfig from '../next-i18next.config';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('/sw.tsx').then(
           (registration) => console.log('SW registered: ', registration.scope),
-          (err) => console.log('SW registration failed: ', err)
+          (err) => console.log('SW registration failed: ', err),
         );
       });
     }

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './styles/**/*.css', // Add this line to scan for classes in stylesheets
   ],
   theme: {
     extend: {
@@ -10,12 +11,13 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       colors: {
-        background: '#171321',
-        silver: '#AAA6CF',
-      }
+        'background-primary': '#F9FAFB', // Very light gray/off-white
+        'text-primary': '#334155', // Dark charcoal gray for main text
+        'accent-primary': '#AEC6CF', // Soft, muted cadet blue for primary accents
+        'accent-secondary': '#DCCDB4', // Warm, soft beige/sand tone for secondary accents
+        'border-light': '#CBD5E1', // Light, clean gray for borders and subtle elements
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  plugins: [require('@tailwindcss/typography')],
+};

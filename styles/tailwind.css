@@ -1,17 +1,7 @@
-@import "tailwindcss";
-
-@theme {
-  /* Define your custom 'background' color here */
-  /* This automatically creates the 'bg-background' utility */
-  --color-background: #171321; 
-  
-  /* You can also define your custom purple if you like */
-  --color-brand-purple: #AAA6CF;
-}
+@import 'tailwindcss';
 
 @layer base {
   body {
-    /* Now 'bg-background' exists because it's defined in @theme above */
-    @apply bg-background text-white font-sans antialiased;
+    @apply bg-background-primary text-text-primary font-sans antialiased;
   }
 }
