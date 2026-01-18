@@ -22,7 +22,7 @@ const WorkExperience = () => {
             title: t('common:work_blockonomics_lead_title'),
             company: t('common:work_blockonomics_lead_company'),
             date: t('common:work_blockonomics_lead_date'),
-            descs: [t('common:work_blockonomics_lead_desc1'), t('common:work_blockonomics_lead_desc2'), t('common:work_blockonomics_lead_desc3')],
+            descs: [t('common:work_blockonomics_lead_desc1'), t('common:work_blockonomics_lead_desc2'), t('common:work_blockonomics_lead_desc3'), t('common:work_blockonomics_lead_desc4')],
             icon: Blockonomics_icon
           },
           {

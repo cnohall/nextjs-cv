@@ -11,19 +11,19 @@ export default function Projects() {
       title: t('project_polaris_title'),
       description: t('common:polarisaudit_desc'),
       link: 'https://polarisaudit.com/',
-      tags: ['Next.js', 'TypeScript', 'Security']
+      tags: ['React', 'TypeScript', 'Django']
     },
     {
       title: t('project_emptyinbox_title'),
       description: t('common:emptyinbox_desc'),
       link: 'https://emptyinbox.me/',
-      tags: ['React', 'Node.js', 'Passkeys']
+      tags: ['Vanilla JS', 'Python', 'Passkeys']
     },
     {
       title: t('project_ark_explorer_title'),
       description: t('common:rkexplorer_desc'),
-      link: 'https://rkexplorer.blockonomics.co/',
-      tags: ['React', 'Bitcoin', 'Web3']
+      link: 'https://arkexplorer.blockonomics.co/',
+      tags: ['React', 'Bitcoin Layer 2', 'Web3']
     },
   ];
 
