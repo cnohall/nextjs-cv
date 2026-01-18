@@ -2,6 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { I18N_NAMESPACES } from '../../../helpers/constants';
 import Image from 'next/image';
 import myImage from '../../../assets/images/cartoon_me.png';
+import Link from 'next/link';
 
 const Hero = () => {
   const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
@@ -16,12 +17,12 @@ const Hero = () => {
           {t('common:basedInKorea')}
         </h3>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a
+          <Link
             href="/projects"
             className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold transition-all"
           >
             {t('common:view_projects')}
-          </a>
+          </Link>
           <a
             href="#contact"
             className="border border-white/20 hover:border-white text-white px-8 py-3 rounded-full font-bold transition-all"
