@@ -11,7 +11,7 @@ type ToastMessage = {
 };
 
 const ContactForm = () => {
-  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t } = useTranslation();
   const form = useRef<HTMLFormElement>(null);
   const [sentEmail, setSentEmail] = useState<boolean>(false);
   const [showToast, setShowToast] = useState<boolean>(false);

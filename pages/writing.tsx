@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 // TODO: Re-incorporate this when ready
 export default function Writing({ allPostsData }) {
-  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t } = useTranslation();
   return (
     <div className="container mx-auto px-4 text-white">
       <Head>

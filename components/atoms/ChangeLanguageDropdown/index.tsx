@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 const ChangeLanguageDropdown = () => {
-  const { t, i18n } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t, i18n } = useTranslation();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 

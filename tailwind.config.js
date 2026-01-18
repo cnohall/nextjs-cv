@@ -10,11 +10,11 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       colors: {
-        'background-primary': '#F9FAFB', // Very light gray/off-white
-        'text-primary': '#334155', // Dark charcoal gray for main text
-        'accent-primary': '#AEC6CF', // Soft, muted cadet blue for primary accents
-        'accent-secondary': '#DCCDB4', // Warm, soft beige/sand tone for secondary accents
-        'border-light': '#CBD5E1', // Light, clean gray for borders and subtle elements
+        'background-primary': '#F8F7F4', // Warmer, creamier off-white
+        'text-primary': '#2c3e50', // Softer, more sophisticated dark blue-gray
+        'accent-primary': '#81A1C1', // Muted, classic Scandinavian blue
+        'accent-secondary': '#BF616A', // Muted, warm terracotta red
+        'border-light': '#E5E7EB', // Neutral, light gray for borders
       },
     },
   },

@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { I18N_NAMESPACES } from '../../../helpers/constants';
 
 const Introduction: React.FC = () => {
-  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t } = useTranslation();
 
   return (
     <section id="about" className="py-16 border-t border-white/10">

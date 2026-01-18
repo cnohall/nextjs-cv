@@ -5,7 +5,7 @@ import myImage from '../../../assets/images/cartoon_me.png';
 import Link from 'next/link';
 
 const Hero = () => {
-  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t } = useTranslation();
 
   return (
     <section className="flex flex-col md:flex-row items-center justify-between py-16 md:py-24 gap-12">

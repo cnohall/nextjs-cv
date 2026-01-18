@@ -4,7 +4,7 @@ import ChangeLanguageDropdown from '../../atoms/ChangeLanguageDropdown';
 import Link from 'next/link';
 
 const Navigationbar = () => {
-  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t } = useTranslation();
 
   return (
     <nav className="py-6">

@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import { I18N_NAMESPACES } from '../../../helpers/constants';
 
 export default function Footer() {
-  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
 
   return (
