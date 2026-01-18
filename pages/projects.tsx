@@ -4,7 +4,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { I18N_NAMESPACES } from '../helpers/constants';
 
 export default function Projects() {
-  const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
+  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
 
   const projects = [
     {

@@ -25,5 +25,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-// Pass the config as the second argument to fix the "missing config" error
-export default appWithTranslation(MyApp, nextI18nextConfig);
+export default appWithTranslation(MyApp);

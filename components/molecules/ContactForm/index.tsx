@@ -4,12 +4,18 @@ import BootstrapToast from '../Toast';
 import { useTranslation } from 'next-i18next';
 import { I18N_NAMESPACES } from '../../../helpers/constants';
 
+type ToastMessage = {
+  title: string;
+  comment: string;
+  body: string;
+};
+
 const ContactForm = () => {
-  const { t } = useTranslation([I18N_NAMESPACES.COMMON]);
+  const { t } = useTranslation(I18N_NAMESPACES.COMMON);
   const form = useRef<HTMLFormElement>(null);
   const [sentEmail, setSentEmail] = useState<boolean>(false);
   const [showToast, setShowToast] = useState<boolean>(false);
-  const [message, setMessage] = useState<ToastMessage>({});
+  const [message, setMessage] = useState<ToastMessage>();
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();

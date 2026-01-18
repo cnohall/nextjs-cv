@@ -3,7 +3,6 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './styles/tailwind.css', // Explicitly include the main Tailwind stylesheet
   ],
   theme: {
     extend: {
