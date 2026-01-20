@@ -1,18 +1,14 @@
 module.exports = {
   root: true,
-  extends: ["next/core-web-vitals", "plugin:prettier/recommended"],
+  extends: ['next/core-web-vitals', 'plugin:prettier/recommended'],
   rules: {
-    semi: ["error", "always"],
-    "max-len": "off"
+    semi: ['error', 'always'],
+    'max-len': 'off',
   },
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ["./tsconfig.json"],
-    tsconfigRootDir: __dirname
+    project: ['./tsconfig.json'],
+    tsconfigRootDir: __dirname,
   },
-  ignorePatterns: [
-    ".eslintrc.js",
-    "postcss.config.js",
-    "tailwind.config.js"
-  ]
+  ignorePatterns: ['.eslintrc.js', 'postcss.config.js', 'tailwind.config.js'],
 };

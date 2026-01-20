@@ -20,6 +20,7 @@ export default function Projects() {
           {t('common:projects_title')}
           {t('common:page_title_separator')}
         </title>
+        <meta name="description" content={t('common:projects_description')} />
       </Head>
       <header className="mb-16">
         <h1 className="text-5xl font-black mb-4">{t('common:projects_title')}</h1>
@@ -35,7 +36,9 @@ export default function Projects() {
             <h3 className="text-2xl font-bold mb-3 group-hover:text-accent-primary transition-colors">
               {project.title}
             </h3>
-            <p className="text-text-secondary mb-6 flex-grow leading-relaxed">{project.description}</p>
+            <p className="text-text-secondary mb-6 flex-grow leading-relaxed">
+              {project.description}
+            </p>
             <div className="flex flex-wrap gap-2 mb-8">
               {project.tags?.map((tag) => (
                 <span

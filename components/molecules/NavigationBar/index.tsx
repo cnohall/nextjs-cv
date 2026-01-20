@@ -1,4 +1,3 @@
-
 'use client';
 
 import { I18N_NAMESPACES } from '../../../helpers/constants';
