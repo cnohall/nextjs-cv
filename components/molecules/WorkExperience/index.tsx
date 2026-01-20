@@ -9,9 +9,9 @@ const WorkExperience = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="work" className="py-16 border-t border-white/10">
+    <section id="work" className="py-16 border-t border-border-light">
       <div className="mb-12">
-        <span className="text-green-500 font-mono text-sm uppercase tracking-widest">
+        <span className="text-accent-primary font-mono text-sm uppercase tracking-widest">
           {t('common:what_i_have_done_so_far')}
         </span>
         <h2 className="text-3xl font-bold mt-2">{t('common:work_experience')}</h2>
@@ -69,20 +69,20 @@ const WorkExperience = () => {
         ].map((job) => (
           <div
             key={job.id}
-            className="relative pl-8 border-l-2 border-white/10 hover:border-green-500 transition-colors"
+            className="relative pl-8 border-l-2 border-border-light hover:border-accent-primary transition-colors"
           >
-            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-[#171321] border-2 border-green-500 rounded-full" />
+            <div className="absolute -left-[9px] top-0 w-4 h-4 bg-background-primary border-2 border-accent-primary rounded-full" />
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
               <div>
                 <h3 className="text-xl font-bold">{job.title}</h3>
-                <span className="text-green-500 font-medium">{job.company}</span>
+                <span className="text-accent-primary font-medium">{job.company}</span>
               </div>
-              <span className="text-sm text-[#AAA6CF] font-mono mt-1 md:mt-0">{job.date}</span>
+              <span className="text-sm text-text-secondary font-mono mt-1 md:mt-0">{job.date}</span>
             </div>
             <ul className="space-y-2">
               {job.descs.map((desc, i) => (
-                <li key={i} className="text-[#AAA6CF] leading-relaxed flex items-start">
-                  <span className="mr-2 mt-2 w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0" />
+                <li key={i} className="text-text-secondary leading-relaxed flex items-start">
+                  <span className="mr-2 mt-2 w-1.5 h-1.5 bg-accent-primary rounded-full flex-shrink-0" />
                   {desc}
                 </li>
               ))}

@@ -10,7 +10,9 @@ const poppins = Poppins({
 
 const Layout = ({ children }) => {
   return (
-    <div className={`${poppins.className} bg-[#171321] text-white min-h-screen flex flex-col`}>
+    <div
+      className={`${poppins.className} bg-background-primary text-text-primary min-h-screen flex flex-col`}
+    >
       <SpeedInsights />
       <Navigationbar />
       <main className="flex-grow max-w-5xl mx-auto px-4">{children}</main>

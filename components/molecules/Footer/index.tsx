@@ -7,11 +7,11 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-20 border-t border-white/10 py-12">
+    <footer className="mt-20 border-t border-border-light py-12">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="text-center md:text-left">
-          <p className="text-[#AAA6CF] text-sm">{t('common:copyright', { year })}</p>
-          <p className="text-[#AAA6CF]/50 text-xs mt-1">{t('common:built_with')}</p>
+          <p className="text-text-secondary text-sm">{t('common:copyright', { year })}</p>
+          <p className="text-text-secondary/50 text-xs mt-1">{t('common:built_with')}</p>
         </div>
 
         <div className="flex items-center gap-6">
@@ -19,14 +19,14 @@ export default function Footer() {
             <a
               href="https://github.com/cnohall/cnohall"
               target="_blank"
-              className="text-[#AAA6CF] hover:text-white transition-colors"
+              className="text-text-secondary hover:text-text-primary transition-colors"
             >
               <BsGithub size={24} />
             </a>
             <a
               href="https://www.linkedin.com/in/christopher-nohall/"
               target="_blank"
-              className="text-[#AAA6CF] hover:text-white transition-colors"
+              className="text-text-secondary hover:text-text-primary transition-colors"
             >
               <BsLinkedin size={24} />
             </a>
@@ -34,7 +34,7 @@ export default function Footer() {
           <a
             href="/resume/Chris_Nohall_CV.pdf"
             target="_blank"
-            className="bg-white/5 hover:bg-white/10 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all border border-white/10"
+            className="bg-border-light/20 hover:bg-border-light/30 text-text-primary px-6 py-2 rounded-lg text-sm font-bold transition-all border border-border-light"
           >
             {t('common:resume')}
           </a>

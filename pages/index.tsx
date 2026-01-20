@@ -6,7 +6,7 @@ import Hero from '../components/atoms/Hero';
 import Introduction from '../components/atoms/Introduction';
 import { I18N_NAMESPACES } from '../helpers/constants';
 
-export async function getServerSideProps({ locale }) {
+export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [I18N_NAMESPACES.COMMON])),
@@ -16,12 +16,19 @@ export async function getServerSideProps({ locale }) {
 
 const Home = () => {
   return (
-    <div className="bg-[#171321] text-white min-h-screen flex flex-col">
+    <>
+      <Head>
+        <title>Chris Nohall - Frontend Developer</title>
+        <meta
+          name="description"
+          content="The portfolio of Chris Nohall, a frontend developer with a passion for creating beautiful and functional web applications."
+        />
+      </Head>
       <Hero />
       <Introduction />
       <WorkExperience />
       <ContactForm />
-    </div>
+    </>
   );
 };
 

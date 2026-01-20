@@ -60,19 +60,19 @@ const ContactForm = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10" id="contact">
       <div>
         <h1 className="font-black text-4xl">{t('common:contact_me_title')}</h1>
-        <p className="text-[#AAA6CF] max-w-2xl mt-4">
+        <p className="text-text-secondary max-w-2xl mt-4">
           {t('common:contact_intro_1')}
           {t('common:contact_intro_2')}
         </p>
-        <p className="text-[#AAA6CF] max-w-2xl mt-4">{t('common:contact_intro_3')}</p>
-        <p className="text-[#AAA6CF] max-w-2xl mt-4">{t('common:contact_intro_4')}</p>
+        <p className="text-text-secondary max-w-2xl mt-4">{t('common:contact_intro_3')}</p>
+        <p className="text-text-secondary max-w-2xl mt-4">{t('common:contact_intro_4')}</p>
       </div>
       <div>
         {showToast && <BootstrapToast message={message} setShowToast={setShowToast} />}
         <form ref={form} onSubmit={sendEmail}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="my-2">
-              <label htmlFor="from_name" className="block text-sm font-medium text-gray-400">
+              <label htmlFor="from_name" className="block text-sm font-medium text-text-secondary">
                 {t('common:contact_label_your_name')}
               </label>
               <input
@@ -81,11 +81,11 @@ const ContactForm = () => {
                 name="from_name"
                 type="text"
                 placeholder={t('common:contact_placeholder_your_name')}
-                className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 bg-border-light/20 border border-border-light rounded-md text-text-primary placeholder-text-secondary focus:outline-none focus:ring-accent-primary focus:border-accent-primary sm:text-sm"
               />
             </div>
             <div className="my-2">
-              <label htmlFor="reply_to" className="block text-sm font-medium text-gray-400">
+              <label htmlFor="reply_to" className="block text-sm font-medium text-text-secondary">
                 {t('common:contact_label_email_address')}
               </label>
               <input
@@ -94,12 +94,12 @@ const ContactForm = () => {
                 name="reply_to"
                 type="email"
                 placeholder={t('common:contact_placeholder_email_address')}
-                className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 bg-border-light/20 border border-border-light rounded-md text-text-primary placeholder-text-secondary focus:outline-none focus:ring-accent-primary focus:border-accent-primary sm:text-sm"
               />
             </div>
           </div>
           <div className="mb-3">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-400">
+            <label htmlFor="message" className="block text-sm font-medium text-text-secondary">
               {t('common:contact_label_your_message')}
             </label>
             <textarea
@@ -108,12 +108,12 @@ const ContactForm = () => {
               name="message"
               rows={3}
               placeholder={t('common:contact_form_message_placeholder')}
-              className="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 bg-border-light/20 border border-border-light rounded-md text-text-primary placeholder-text-secondary focus:outline-none focus:ring-accent-primary focus:border-accent-primary sm:text-sm"
             />
           </div>
           <button
             type="submit"
-            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-text-primary bg-accent-primary hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-primary"
           >
             {t('common:contact_button_submit')}
           </button>

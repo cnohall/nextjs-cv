@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 export default function Writing({ allPostsData }) {
   const { t } = useTranslation();
   return (
-    <div className="container mx-auto px-4 text-white">
+    <div className="container mx-auto px-4">
       <Head>
         <title>
           {t('common:writing')}
@@ -21,12 +21,12 @@ export default function Writing({ allPostsData }) {
         {allPostsData.map(({ id, date, title, description, readtime }) => (
           <div key={id} className="my-2">
             <Link href={`/writing/${id}`} passHref>
-              <div className="bg-[rgb(177,172,185)] rounded-md overflow-hidden cursor-pointer shadow-lg transition-all ease-in-out duration-200 hover:scale-105 hover:shadow-xl text-gray-100 h-40 flex flex-col justify-between">
+              <div className="bg-border-light rounded-md overflow-hidden cursor-pointer shadow-lg transition-all ease-in-out duration-200 hover:scale-105 hover:shadow-xl text-text-primary h-40 flex flex-col justify-between">
                 <div className="p-4">
                   <h5 className="text-lg font-bold">{title}</h5>
                   <p className="text-sm">{description || ''}</p>
                 </div>
-                <div className="p-4 bg-black bg-opacity-10">
+                <div className="p-4 bg-background-primary/20">
                   <small className="text-xs">
                     {t('common:writing_posted_prefix')}
                     {date}

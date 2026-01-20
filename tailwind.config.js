@@ -9,12 +9,13 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
-      colors: {
-        'background-primary': '#F8F7F4', // Warmer, creamier off-white
-        'text-primary': '#2c3e50', // Softer, more sophisticated dark blue-gray
-        'accent-primary': '#81A1C1', // Muted, classic Scandinavian blue
-        'accent-secondary': '#BF616A', // Muted, warm terracotta red
-        'border-light': '#E5E7EB', // Neutral, light gray for borders
+    colors: {
+        'background-primary': '#1a202c',
+        'text-primary': '#edf2f7',
+        'text-secondary': '#a0aec0', 
+        'accent-primary': '#4299e1',
+        'accent-secondary': '#BF616A',
+        'border-light': '#4a5568',
       },
     },
   },
