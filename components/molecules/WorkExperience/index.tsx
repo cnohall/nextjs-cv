@@ -70,6 +70,7 @@ const WorkExperience = () => {
           <div
             key={job.id}
             className="relative pl-8 border-l-2 border-border-light hover:border-accent-primary transition-colors"
+            data-aos="fade-up"
           >
             <div className="absolute -left-[9px] top-0 w-4 h-4 bg-background-primary border-2 border-accent-primary rounded-full" />
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">

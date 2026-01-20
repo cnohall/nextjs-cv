@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section className="flex flex-col md:flex-row items-center justify-between py-16 md:py-24 gap-12">
-      <div className="flex-1 text-center md:text-left">
+      <div className="flex-1 text-center md:text-left" data-aos="fade-right">
         <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight h-24 md:h-32">
           <TypeAnimation
             sequence={[t('common:frontendDeveloper'), 1000, 'Chris Nohall', 1000]}
@@ -37,17 +37,15 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex-1 flex justify-center">
-        <div className="relative w-48 h-80 md:w-64 md:h-[400px] rounded-2xl p-1 bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 transform hover:scale-105 transition-all duration-500">
-          <div className="relative w-full h-full">
-            <Image
-              className="rounded-xl object-cover grayscale hover:grayscale-0 transition-all duration-500"
-              src={myImage}
-              alt="Chris Nohall"
-              fill
-              priority
-            />
-          </div>
+      <div className="flex-1 flex justify-center" data-aos="fade-left">
+        <div className="relative w-48 h-80 md:w-64 md:h-[400px]">
+          <Image
+            className="rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-105"
+            src={myImage}
+            alt="Chris Nohall"
+            fill
+            priority
+          />
         </div>
       </div>
     </section>

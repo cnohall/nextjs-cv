@@ -31,7 +31,14 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group bg-border-light/20 border border-border-light p-8 rounded-2xl hover:border-accent-primary/50 transition-all flex flex-col"
+            className={`group bg-white/10 backdrop-blur-lg p-8 rounded-2xl flex flex-col ${
+              index % 2 === 0
+                ? 'border border-white/20 hover:border-accent-primary/50'
+                : 'border-l-4 border-accent-primary hover:border-accent-primary/50'
+            } transition-all`}
+            data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
+            data-aos-delay={(index % 2) * 100}
+            data-aos-anchor-placement="top-center"
           >
             <h3 className="text-2xl font-bold mb-3 group-hover:text-accent-primary transition-colors">
               {project.title}

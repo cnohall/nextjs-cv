@@ -80,7 +80,7 @@
   "contact_label_your_message": "您的消息",
   "contact_button_submit": "提交",
   "copyright": "© {{year}} Chris Nohall. 保留所有权利。",
-  "built_with": "基于 Next.js 14 & Tailwind CSS v4 构建",
+  "built_with": "基于 Next.js 14 & Tailwind CSS 构建",
   "view_projects": "查看项目",
   "get_in_touch": "取得联系",
   "work_experience": "工作经历",

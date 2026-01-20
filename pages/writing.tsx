@@ -3,7 +3,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { I18N_NAMESPACES } from '../helpers/constants';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 // TODO: Re-incorporate this when ready
 export default function Writing({ allPostsData }) {
@@ -18,10 +18,10 @@ export default function Writing({ allPostsData }) {
       </Head>
       <h3 className="my-5">{t('common:writing_welcome_message')}</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-        {allPostsData.map(({ id, date, title, description, readtime }) => (
-          <div key={id} className="my-2">
+        {allPostsData.map(({ id, date, title, description, readtime }, index) => (
+          <div key={id} className="my-2" data-aos="fade-up" data-aos-delay={(index % 2) * 100}>
             <Link href={`/writing/${id}`} passHref>
-              <div className="bg-border-light rounded-md overflow-hidden cursor-pointer shadow-lg transition-all ease-in-out duration-200 hover:scale-105 hover:shadow-xl text-text-primary h-40 flex flex-col justify-between">
+              <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-md overflow-hidden cursor-pointer transition-all ease-in-out duration-200 hover:scale-105 text-text-primary h-40 flex flex-col justify-between">
                 <div className="p-4">
                   <h5 className="text-lg font-bold">{title}</h5>
                   <p className="text-sm">{description || ''}</p>

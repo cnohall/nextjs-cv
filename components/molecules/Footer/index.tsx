@@ -1,6 +1,7 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { useTranslation } from 'next-i18next';
 import { I18N_NAMESPACES } from '../../../helpers/constants';
+import Link from 'next/link';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -30,6 +31,12 @@ export default function Footer() {
             >
               <BsLinkedin size={24} />
             </a>
+            <Link
+              href="/writing"
+              className="text-text-secondary hover:text-text-primary transition-colors text-sm font-bold"
+            >
+              {t('common:writing')}
+            </Link>
           </div>
           <a
             href="/resume/Chris_Nohall_CV.pdf"

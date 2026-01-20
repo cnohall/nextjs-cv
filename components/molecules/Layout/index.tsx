@@ -11,7 +11,7 @@ const poppins = Poppins({
 const Layout = ({ children }) => {
   return (
     <div
-      className={`${poppins.className} bg-background-primary text-text-primary min-h-screen flex flex-col`}
+      className={`${poppins.className} bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#1a202c] text-text-primary min-h-screen flex flex-col`}
     >
       <SpeedInsights />
       <Navigationbar />

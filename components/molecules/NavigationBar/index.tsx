@@ -46,6 +46,12 @@ const Navigationbar = () => {
             {t('common:projects')}
           </Link>
           <Link
+            href="/writing"
+            className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
+          >
+            {t('common:writing')}
+          </Link>
+          <Link
             href="/#contact"
             className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
           >

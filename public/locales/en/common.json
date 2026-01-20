@@ -80,7 +80,7 @@
   "contact_label_your_message": "Your Message",
   "contact_button_submit": "Submit",
   "copyright": "© {{year}} Chris Nohall. All Rights Reserved.",
-  "built_with": "Built with Next.js 14 & Tailwind CSS v4",
+  "built_with": "Built with Next.js 14 & Tailwind CSS",
   "view_projects": "View Projects",
   "get_in_touch": "Get in Touch",
   "work_experience": "Work Experience",

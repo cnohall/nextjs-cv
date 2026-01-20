@@ -80,7 +80,7 @@
   "contact_label_your_message": "Ditt Meddelande",
   "contact_button_submit": "Skicka",
   "copyright": "© {{year}} Chris Nohall. Alla rättigheter förbehållna.",
-  "built_with": "Byggd med Next.js 14 & Tailwind CSS v4",
+  "built_with": "Byggd med Next.js 14 & Tailwind CSS",
   "view_projects": "Visa Projekt",
   "get_in_touch": "Kontakta Mig",
   "work_experience": "Arbetslivserfarenhet",

@@ -80,7 +80,7 @@
   "contact_label_your_message": "메시지",
   "contact_button_submit": "보내기",
   "copyright": "© {{year}} Chris Nohall. All Rights Reserved.",
-  "built_with": "Next.js 14 & Tailwind CSS v4 기반",
+  "built_with": "Next.js 14 & Tailwind CSS 기반",
   "view_projects": "프로젝트 보기",
   "get_in_touch": "연락하기",
   "work_experience": "경력 사항",

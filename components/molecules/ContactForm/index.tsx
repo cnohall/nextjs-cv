@@ -57,7 +57,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10" id="contact">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10" id="contact" data-aos="fade-up">
       <div>
         <h1 className="font-black text-4xl">{t('common:contact_me_title')}</h1>
         <p className="text-text-secondary max-w-2xl mt-4">
