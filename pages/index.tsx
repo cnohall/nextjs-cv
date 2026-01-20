@@ -18,11 +18,12 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Chris Nohall - Frontend Developer</title>
+        <title>Chris Nohall - Software Developer</title>
         <meta
           name="description"
-          content="The portfolio of Chris Nohall, a frontend developer with a passion for creating beautiful and functional web applications."
+          content="The portfolio of Chris Nohall, a software developer with a passion for creating beautiful and functional web applications."
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
       <Introduction />
